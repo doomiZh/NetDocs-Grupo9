@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- PRUEBA DEVELOP GITHUB -->
-<!-- PRUEBA DEL ERROR QUITANDO LA
-     ETIQUETA DE CIERRE DE PROYECTO-->
+
 
 <!DOCTYPE proyecto [
     <!ENTITY pag_uno SYSTEM "pagina_uno.xml">
@@ -41,3 +40,4 @@
     <pagina_ocho>&pag_ocho;</pagina_ocho>
     <pagina_nueve>&pag_nueve;</pagina_nueve>
     <pagina_diez>&pag_diez;</pagina_diez>
+</proyecto>
