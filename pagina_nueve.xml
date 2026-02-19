@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_nueve [
+    <!ELEMENT pagina_nueve (pagina_nueve_topologias)>
+        <!ELEMENT pagina_nueve_topologias (pagina_nueve_titulo_topologias,pagina_nueve_descripcion_topologias,pagina_nueve_tipos_topologias,
+        pagina_nueve_modos_conexiones,pagina_nueve_tablas_topologias)>
+            <!ELEMENT pagina_nueve_titulo_topologias (#PCDATA)>
+            <!ELEMENT pagina_nueve_descripcion_topologias (#PCDATA)>
+            <!-- TOPOLOGIAS -->
+            <!ELEMENT pagina_nueve_tipos_topologias (pagina_nueve_tipo_topologia+)>
+                <!ELEMENT pagina_nueve_tipo_topologia (pagina_nueve_imagen_topologia,pagina_nueve_titulo_tipo_topologia,pagina_nueve_descripcion_tipo_topologia)>
+                    <!ELEMENT pagina_nueve_imagen_topologia (#PCDATA)>
+                    <!ELEMENT pagina_nueve_titulo_tipo_topologia (#PCDATA)>
+                    <!ELEMENT pagina_nueve_descripcion_tipo_topologia (#PCDATA)>
+            <!-- MODOS CONEXIONES -->
+            <!ELEMENT pagina_nueve_modos_conexiones (pagina_nueve_titulo_modos_conexiones,pagina_nueve_tipos_modos_conexiones)>
+                <!ELEMENT pagina_nueve_titulo_modos_conexiones (#PCDATA)>
+                <!ELEMENT pagina_nueve_tipos_modos_conexiones (pagina_nueve_tipo_modo_conexion+)>
+                    <!ELEMENT pagina_nueve_tipo_modo_conexion (pagina_nueve_titulo_tipo_modo_conexion,pagina_nueve_descripcion_tipo_modo_conexion)>
+                        <!ELEMENT pagina_nueve_titulo_tipo_modo_conexion (#PCDATA)>
+                        <!ELEMENT pagina_nueve_descripcion_tipo_modo_conexion (#PCDATA)>
+            <!-- TABLAS TOPOLOGIAS -->
+            <!ELEMENT pagina_nueve_tablas_topologias (pagina_nueve_titulo_tabla,pagina_nueve_descripcion_tabla,pagina_nueve_tabla)>
+                <!ELEMENT pagina_nueve_titulo_tabla (#PCDATA)>
+                <!ELEMENT pagina_nueve_descripcion_tabla (#PCDATA)>
+
+                <!ELEMENT pagina_nueve_tabla (pagina_nueve_cabecera_tabla,pagina_nueve_filas)>
+                    <!ELEMENT pagina_nueve_cabecera_tabla (pagina_nueve_cabecera_topologia,pagina_nueve_cabecera_descripcion,pagina_nueve_cabecera_ventaja
+                    ,pagina_nueve_cabecera_desventaja)>
+                        <!ELEMENT pagina_nueve_cabecera_topologia (#PCDATA)>
+                        <!ELEMENT pagina_nueve_cabecera_descripcion (#PCDATA)>
+                        <!ELEMENT pagina_nueve_cabecera_ventaja (#PCDATA)>
+                        <!ELEMENT pagina_nueve_cabecera_desventaja (#PCDATA)>
+
+                    <!ELEMENT pagina_nueve_filas (pagina_nueve_fila+)>
+                        <!ELEMENT pagina_nueve_fila (pagina_nueve_fila_topologia,pagina_nueve_fila_descripcion,pagina_nueve_fila_ventaja
+                        ,pagina_nueve_fila_desventaja)>
+                            <!ELEMENT pagina_nueve_fila_topologia (#PCDATA)>
+                            <!ELEMENT pagina_nueve_fila_descripcion (#PCDATA)>
+                            <!ELEMENT pagina_nueve_fila_ventaja (#PCDATA)>
+                            <!ELEMENT pagina_nueve_fila_desventaja (#PCDATA)>
+]>
+
+<pagina_nueve>
+    <pagina_nueve_topologias>
+        <pagina_nueve_titulo_topologias>Topologías de Red y Modos de Conexión</pagina_nueve_titulo_topologias>
+        <pagina_nueve_descripcion_topologias>La topología define la estructura física o lógica en la que están conectados los dispositivos de una red. Cada topología tiene ventajas, desventajas y casos de uso específicos que determinan su idoneidad para diferentes escenarios.</pagina_nueve_descripcion_topologias>
+    
+        <!-- TOPOLOGIAS -->
+        <pagina_nueve_tipos_topologias>
+            <pagina_nueve_tipo_topologia>
+                <pagina_nueve_imagen_topologia>pagina_nueve_topologia_bus.png</pagina_nueve_imagen_topologia>
+                <pagina_nueve_titulo_tipo_topologia>Bus</pagina_nueve_titulo_tipo_topologia>
+                <pagina_nueve_descripcion_tipo_topologia>
+                    <![CDATA[ 
+                    Un solo cable central (backbone) al que todos los dispositivos se conectan. 
+                    <strong>Ventaja:</strong> Simplicidad, bajo coste.
+                    <strong>Desventaja crítica:</strong> Si el cable central se rompe, toda la red cae. Obsoleta actualmente, se usaba en redes Ethernet antiguas (10Base2).
+                    ]]>
+                </pagina_nueve_descripcion_tipo_topologia>
+            </pagina_nueve_tipo_topologia>
+
+            <pagina_nueve_tipo_topologia>
+                <pagina_nueve_imagen_topologia>pagina_nueve_topologia_estrella.png</pagina_nueve_imagen_topologia>
+                <pagina_nueve_titulo_tipo_topologia>Estrella</pagina_nueve_titulo_tipo_topologia>
+                <pagina_nueve_descripcion_tipo_topologia>
+                    <![CDATA[ 
+                    Todos los dispositivos conectados a un punto central (Switch o Hub).
+                    <strong>Ventaja:</strong> Si falla un cable, solo ese dispositivo se desconecta; el resto funciona. Fácil diagnóstico y escalabilidad.
+                    <strong>Desventaja:</strong> El punto central es crítico. <strong>Estándar actual en LANs Ethernet.</strong>
+                    ]]>
+                </pagina_nueve_descripcion_tipo_topologia>
+            </pagina_nueve_tipo_topologia>
+
+            <pagina_nueve_tipo_topologia>
+                <pagina_nueve_imagen_topologia>pagina_nueve_topologia_anillo.png</pagina_nueve_imagen_topologia>
+                <pagina_nueve_titulo_tipo_topologia>Anillo</pagina_nueve_titulo_tipo_topologia>
+                <pagina_nueve_descripcion_tipo_topologia>
+                    <![CDATA[ 
+                    Circuito cerrado donde los datos viajan en una dirección (o bidireccional en anillo dual). Cada nodo regenera la señal. 
+                    <strong>Uso histórico:</strong> Token Ring de IBM, FDDI en fibra óptica. Poco común hoy, reemplazada por estrella.
+                    ]]>
+                </pagina_nueve_descripcion_tipo_topologia>
+            </pagina_nueve_tipo_topologia>
+
+            <pagina_nueve_tipo_topologia>
+                <pagina_nueve_imagen_topologia>pagina_nueve_topologia_malla.png</pagina_nueve_imagen_topologia>
+                <pagina_nueve_titulo_tipo_topologia>Malla(Mesh)</pagina_nueve_titulo_tipo_topologia>
+                <pagina_nueve_descripcion_tipo_topologia>
+                    <![CDATA[ 
+                    Todos (o muchos) nodos conectados entre sí directamente.
+                    <strong>Ventaja:</strong> Máxima redundancia y robustez. Si falla un enlace, los datos toman rutas alternativas.
+                    <strong>Desventaja:</strong> Coste alto.
+                    <strong>Uso:</strong> Redes críticas (militares, satélites), Internet backbone, redes de sensores.                    
+                    ]]>
+                </pagina_nueve_descripcion_tipo_topologia>
+            </pagina_nueve_tipo_topologia>
+
+            <pagina_nueve_tipo_topologia>
+                <pagina_nueve_imagen_topologia>pagina_nueve_topologia_arbol.png</pagina_nueve_imagen_topologia>
+                <pagina_nueve_titulo_tipo_topologia>Árbol (Jerárquica)</pagina_nueve_titulo_tipo_topologia>
+                <pagina_nueve_descripcion_tipo_topologia>
+                    <![CDATA[ 
+                    Múltiples topologías en estrella conectadas jerárquicamente a un backbone central.
+                    <strong>Ventaja:</strong> Escalable, organizada por jerarquías (departamentos, plantas).
+                    <strong>Uso común:</strong> Edificios grandes, campus universitarios, empresas con estructura por divisiones.                    
+                    ]]>
+                </pagina_nueve_descripcion_tipo_topologia>
+            </pagina_nueve_tipo_topologia>
+        </pagina_nueve_tipos_topologias>
+    
+        <!-- MODOS CONEXIONES -->
+        <pagina_nueve_modos_conexiones>
+            <pagina_nueve_titulo_modos_conexiones>Modos de Conexión (Lógica de Comunicación)</pagina_nueve_titulo_modos_conexiones>
+            <pagina_nueve_tipos_modos_conexiones>
+                <pagina_nueve_tipo_modo_conexion>
+                    <pagina_nueve_titulo_tipo_modo_conexion>Orientado a Conexión (Connection-Oriented)</pagina_nueve_titulo_tipo_modo_conexion>
+                    <pagina_nueve_descripcion_tipo_modo_conexion>
+                        <![CDATA[ 
+                        <strong>Protocolo ejemplo:</strong> TCP
+                        <strong>Funcionamiento:</strong> "Llama antes de hablar". Establece un canal dedicado mediante triple apretón de manos (SYN, SYN-ACK, ACK) antes de transmitir datos.
+                        <strong>Características:</strong> Garantiza orden y llegada de datos. Retransmite paquetes perdidos. Control de flujo y congestión.
+                        <strong>Ventajas:</strong> Alta fiabilidad, integridad garantizada.
+                        <strong>Desventajas:</strong> Mayor latencia debido a confirmaciones y establecimiento de sesión.
+                        ]]>
+                    </pagina_nueve_descripcion_tipo_modo_conexion>
+                </pagina_nueve_tipo_modo_conexion>
+
+                <pagina_nueve_tipo_modo_conexion>
+                    <pagina_nueve_titulo_tipo_modo_conexion>Sin Conexión (Connectionless)</pagina_nueve_titulo_tipo_modo_conexion>
+                    <pagina_nueve_descripcion_tipo_modo_conexion>
+                        <![CDATA[ 
+                        <strong>Protocolo ejemplo:</strong> UDP
+                        <strong>Funcionamiento:</strong> "Envía y olvida". No establece sesión previa. Cada paquete viaja independientemente.
+                        <strong>Características:</strong> No confirma recepción. No garantiza orden ni entrega.
+                        <strong>Ventajas:</strong> Máxima velocidad, mínima latencia, ideal para tiempo real.
+                        <strong>Desventajas:</strong> Puede perder datos. La aplicación debe manejar posibles pérdidas.
+                        <strong>Uso ideal:</strong> Streaming, videollamadas, juegos online donde velocidad > perfección.
+                        ]]>
+                    </pagina_nueve_descripcion_tipo_modo_conexion>
+                </pagina_nueve_tipo_modo_conexion>
+            </pagina_nueve_tipos_modos_conexiones>
+        </pagina_nueve_modos_conexiones>
+        
+        <!-- TABLAS TOPOLOGIAS -->
+        <pagina_nueve_tablas_topologias>
+            <pagina_nueve_titulo_tabla>4. Tabla de Topologías de Red</pagina_nueve_titulo_tabla>
+            <pagina_nueve_descripcion_tabla>Aquí se contrastan las formas físicas de conectar los equipos.</pagina_nueve_descripcion_tabla>
+            <pagina_nueve_tabla>
+                <pagina_nueve_cabecera_tabla>
+                    <pagina_nueve_cabecera_topologia>Topología</pagina_nueve_cabecera_topologia>
+                    <pagina_nueve_cabecera_descripcion>Descripción Visual</pagina_nueve_cabecera_descripcion>
+                    <pagina_nueve_cabecera_ventaja>Ventaja Principal</pagina_nueve_cabecera_ventaja>
+                    <pagina_nueve_cabecera_desventaja>Desventaja Principal</pagina_nueve_cabecera_desventaja>
+                </pagina_nueve_cabecera_tabla>
+
+                <pagina_nueve_filas>
+                    <pagina_nueve_fila>
+                        <pagina_nueve_fila_topologia>Bus</pagina_nueve_fila_topologia>
+                        <pagina_nueve_fila_descripcion>Un solo cable central (troncal) con dispositivos a los lados.</pagina_nueve_fila_descripcion>
+                        <pagina_nueve_fila_ventaja>Muy barato y fácil de instalar.</pagina_nueve_fila_ventaja>
+                        <pagina_nueve_fila_desventaja>Si el cable central se rompe, toda la red cae.</pagina_nueve_fila_desventaja>
+                    </pagina_nueve_fila>
+
+                    <pagina_nueve_fila>
+                        <pagina_nueve_fila_topologia>Estrella</pagina_nueve_fila_topologia>
+                        <pagina_nueve_fila_descripcion>Todos los cables van a un punto central (Switch).</pagina_nueve_fila_descripcion>
+                        <pagina_nueve_fila_ventaja>Fácil de gestionar; si falla un PC, el resto sigue funcionando.</pagina_nueve_fila_ventaja>
+                        <pagina_nueve_fila_desventaja>Depende totalmente del Switch central; es más costoso en cableado.</pagina_nueve_fila_desventaja>
+                    </pagina_nueve_fila>
+
+                    <pagina_nueve_fila>
+                        <pagina_nueve_fila_topologia>Anillo</pagina_nueve_fila_topologia>
+                        <pagina_nueve_fila_descripcion>Círculo cerrado de dispositivos.</pagina_nueve_fila_descripcion>
+                        <pagina_nueve_fila_ventaja>Flujo de datos ordenado (sin colisiones).</pagina_nueve_fila_ventaja>
+                        <pagina_nueve_fila_desventaja>Si un nodo falla, puede romper el ciclo (lento de recuperar).</pagina_nueve_fila_desventaja>
+                    </pagina_nueve_fila>
+
+                    <pagina_nueve_fila>
+                        <pagina_nueve_fila_topologia>Malla</pagina_nueve_fila_topologia>
+                        <pagina_nueve_fila_descripcion>Conexiones múltiples entre todos los nodos.</pagina_nueve_fila_descripcion>
+                        <pagina_nueve_fila_ventaja>Robustez total. Si falla una ruta, hay otras.</pagina_nueve_fila_ventaja>
+                        <pagina_nueve_fila_desventaja>Es la más cara y compleja de instalar.</pagina_nueve_fila_desventaja>
+                    </pagina_nueve_fila>
+                </pagina_nueve_filas>
+            </pagina_nueve_tabla>
+        </pagina_nueve_tablas_topologias>
+    </pagina_nueve_topologias>
+</pagina_nueve>

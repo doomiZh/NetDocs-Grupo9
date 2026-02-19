@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_ocho [
+    <!ELEMENT pagina_ocho (pagina_ocho_seguridad)>
+        <!ELEMENT pagina_ocho_seguridad (pagina_ocho_titulo_seguridad,pagina_ocho_descripcion_seguridad,pagina_ocho_tipos_seguridades,
+        pagina_ocho_principio_seguridad)>
+            <!ELEMENT pagina_ocho_titulo_seguridad (#PCDATA)>
+            <!ELEMENT pagina_ocho_descripcion_seguridad (#PCDATA)>
+            <!-- SEGURIDADES -->
+            <!ELEMENT pagina_ocho_tipos_seguridades (pagina_ocho_tipo_seguridad+)>
+                <!ELEMENT pagina_ocho_tipo_seguridad (pagina_ocho_titulo_tipo_seguridad,pagina_ocho_descripcion_tipo_seguridad)>
+                    <!ELEMENT pagina_ocho_titulo_tipo_seguridad (#PCDATA)>
+                    <!ELEMENT pagina_ocho_descripcion_tipo_seguridad (#PCDATA)>
+            <!ELEMENT pagina_ocho_principio_seguridad (#PCDATA)>
+]>
+
+<pagina_ocho>
+    <pagina_ocho_seguridad>
+        <pagina_ocho_titulo_seguridad>Seguridad en Protocolos y Redes</pagina_ocho_titulo_seguridad>
+        <pagina_ocho_descripcion_seguridad>Proteger los datos en tránsito y en reposo es fundamental en el mundo actual de ciberamenazas constantes. Las redes modernas implementan múltiples capas de seguridad para defenderse contra ataques cada vez más sofisticados.</pagina_ocho_descripcion_seguridad>
+        <!-- SEGURIDADES -->
+        <pagina_ocho_tipos_seguridades>
+            <pagina_ocho_tipo_seguridad>
+                <pagina_ocho_titulo_tipo_seguridad>HTTPS (HTTP Secure)</pagina_ocho_titulo_tipo_seguridad>
+                <pagina_ocho_descripcion_tipo_seguridad>
+                    <![CDATA[ 
+                    Combina HTTP con cifrado SSL/TLS (Secure Sockets Layer / Transport
+                    Layer Security). Cifra toda la comunicación entre navegador y servidor
+                    web, protegiendo contraseñas, datos bancarios y comunicaciones
+                    privadas. Esencial para comercio electrónico, banca online y cualquier sitio
+                    que maneje información sensible. Los navegadores modernos marcan
+                    sitios HTTP como "No seguros".
+                    ]]>
+                </pagina_ocho_descripcion_tipo_seguridad>
+            </pagina_ocho_tipo_seguridad>
+
+            <pagina_ocho_tipo_seguridad>
+                <pagina_ocho_titulo_tipo_seguridad>VPN / IPsec</pagina_ocho_titulo_tipo_seguridad>
+                <pagina_ocho_descripcion_tipo_seguridad>
+                    <![CDATA[ 
+                    Las VPNs (Virtual Private Networks) crean "túneles" cifrados sobre redes
+                    públicas (como Internet), permitiendo acceso remoto seguro a redes
+                    corporativas. IPsec cifra cada paquete IP, protegiendo confidencialidad e
+                    integridad. Fundamental para teletrabajo seguro, evitando que hackers
+                    intercepten datos en Wi-Fi públicas o conexiones no confiables.
+                    ]]>
+                </pagina_ocho_descripcion_tipo_seguridad>
+            </pagina_ocho_tipo_seguridad>
+
+            <pagina_ocho_tipo_seguridad>
+                <pagina_ocho_titulo_tipo_seguridad>Firewalls</pagina_ocho_titulo_tipo_seguridad>
+                <pagina_ocho_descripcion_tipo_seguridad>
+                    <![CDATA[ 
+                    Dispositivos (hardware) o software que actúan como barreras de
+                    seguridad, filtrando el tráfico de red según reglas predefinidas. Bloquean
+                    accesos no autorizados permitiendo solo conexiones legítimas. Funcionan
+                    analizando direcciones IP de origen/destino, puertos, protocolos y patrones
+                    de tráfico sospechosos. Pueden ser perimetrales (protegen toda la red) o
+                    personales (protegen un PC individual).
+                    ]]>
+                </pagina_ocho_descripcion_tipo_seguridad>
+            </pagina_ocho_tipo_seguridad>
+
+            <pagina_ocho_tipo_seguridad>
+                <pagina_ocho_titulo_tipo_seguridad>WPA3</pagina_ocho_titulo_tipo_seguridad>
+                <pagina_ocho_descripcion_tipo_seguridad>
+                    <![CDATA[ 
+                    El estándar más reciente y seguro para proteger redes Wi-Fi (2018).
+                    Mejora significativamente sobre WPA2 con cifrado más robusto (192-bit en
+                    modo Enterprise), protección contra ataques de fuerza bruta a
+                    contraseñas, y cifrado individualizado de sesiones (incluso en redes
+                    públicas). WPA3-Personal es el mínimo recomendado para redes
+                    domésticas y empresariales actuales.
+                    ]]>
+                </pagina_ocho_descripcion_tipo_seguridad>
+            </pagina_ocho_tipo_seguridad>
+        </pagina_ocho_tipos_seguridades>
+
+        <pagina_ocho_principio_seguridad>
+            <![CDATA[ 
+            <strong>Principio de Defensa en Profundidad:</strong> La seguridad efectiva no depende de una sola tecnología, sino de múltiples capas complementarias. Una red
+            moderna debe combinar: cifrado de comunicaciones (HTTPS, VPN), control de acceso (Firewalls, autenticación), seguridad Wi-Fi (WPA3),
+            actualizaciones regulares de software, formación de usuarios contra phishing, y sistemas de detección de intrusiones (IDS/IPS).
+            ]]>
+        </pagina_ocho_principio_seguridad>
+    </pagina_ocho_seguridad>
+</pagina_ocho>

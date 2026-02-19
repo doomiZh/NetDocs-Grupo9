@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_siete [
+    <!ELEMENT pagina_siete (pagina_siete_protocolos)>
+        <!-- PROTOCOLOS -->
+        <!ELEMENT pagina_siete_protocolos (pagina_siete_titulo_protocolos,pagina_siete_descripcion_protocolos,pagina_siete_tipos_protocolos
+        ,pagina_siete_tabla_protocolos)>
+            <!ELEMENT pagina_siete_titulo_protocolos (#PCDATA)>
+            <!ELEMENT pagina_siete_descripcion_protocolos (#PCDATA)>
+            <!-- TIPO DE PROTOCOLOS -->
+            <!ELEMENT pagina_siete_tipos_protocolos (pagina_siete_bloques_protocolos)>
+                <!ELEMENT pagina_siete_bloques_protocolos (pagina_siete_bloque_protocolo+)>
+                    <!ELEMENT pagina_siete_bloque_protocolo (pagina_siete_titulo_protocolo,pagina_siete_protocolo+)>
+                        <!ELEMENT pagina_siete_titulo_protocolo (#PCDATA)>
+
+                        <!ELEMENT pagina_siete_protocolo (pagina_siete_nombre_protocolo,pagina_siete_caracteristicas_protocolo+)>
+                            <!ELEMENT pagina_siete_nombre_protocolo (#PCDATA)>
+                            <!ELEMENT pagina_siete_caracteristicas_protocolo (pagina_siete_caracteristica)>
+                                <!ELEMENT pagina_siete_caracteristica (#PCDATA)>
+            <!-- TABLA -->
+            <!ELEMENT pagina_siete_tabla_protocolos (pagina_siete_titulo_tabla,pagina_siete_descripcion_tabla,pagina_siete_tabla)>
+                <!ELEMENT pagina_siete_titulo_tabla (#PCDATA)>
+                <!ELEMENT pagina_siete_descripcion_tabla (#PCDATA)>
+
+                <!ELEMENT pagina_siete_tabla (pagina_siete_cabecera_tabla,pagina_siete_filas)>
+                    <!ELEMENT pagina_siete_cabecera_tabla (pagina_siete_titulo_cabecera,pagina_siete_cabecera_tcp,pagina_siete_cabecera_udp)>
+                        <!ELEMENT pagina_siete_titulo_cabecera (#PCDATA)>
+                        <!ELEMENT pagina_siete_cabecera_tcp (#PCDATA)>
+                        <!ELEMENT pagina_siete_cabecera_udp (#PCDATA)>
+
+                    <!ELEMENT pagina_siete_filas (pagina_siete_fila+)>
+                        <!ELEMENT pagina_siete_fila (pagina_siete_titulo_fila,pagina_siete_fila_tcp,pagina_siete_fila_udp)>
+                            <!ELEMENT pagina_siete_titulo_fila (#PCDATA)>
+                            <!ELEMENT pagina_siete_fila_tcp (#PCDATA)>
+                            <!ELEMENT pagina_siete_fila_udp (#PCDATA)>
+]>
+
+<pagina_siete>
+    <pagina_siete_protocolos>
+        <!-- PROTOCOLOS -->
+        <pagina_siete_titulo_protocolos>Protocolos de Comunicación: Las Reglas del Juego Digital</pagina_siete_titulo_protocolos>
+        <pagina_siete_descripcion_protocolos>Los protocolos son conjuntos de reglas estandarizadas que definen cómo los dispositivos se comunican en una red. Sin estos acuerdos universales, los diferentes sistemas no podrían entenderse entre sí, haciendo imposible la comunicación global.</pagina_siete_descripcion_protocolos>
+        <!-- TIPO DE PROTOCOLOS -->
+        <pagina_siete_tipos_protocolos>
+            <pagina_siete_bloques_protocolos>
+                <pagina_siete_bloque_protocolo>
+                    <pagina_siete_titulo_protocolo>Protocolos de Transporte</pagina_siete_titulo_protocolo>
+                    <pagina_siete_protocolo>
+                        <pagina_siete_nombre_protocolo>TCP (Transmission Control Protocol)</pagina_siete_nombre_protocolo>
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Orientado a conexión: Establece un "canal" antes de transmitir (triple apretón de manos: SYN, SYN-ACK, ACK)</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Fiable: Verifica que todos los datos lleguen y en el orden correcto. Si faltan paquetes, los retransmite automáticamente.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Usos: Navegación web (HTTP/HTTPS), correo electrónico (SMTP/IMAP), descarga de archivos (FTP), SSH. Cualquier aplicación donde la integridad de datos es crítica.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Desventaja: Mayor latencia debido a las confirmaciones</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+                    </pagina_siete_protocolo>
+
+                    <pagina_siete_protocolo>
+                        <pagina_siete_nombre_protocolo>UDP (User Datagram Protocol)</pagina_siete_nombre_protocolo>
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Sin conexión: "Dispara y olvida". No establece canal previo.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>No fiable: No garantiza entrega ni orden. No hay retransmisiones automáticas.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Usos: Streaming de video/audio (Netflix, Spotify), videollamadas (Zoom, Teams), juegos online multijugador, DNS. Aplicaciones donde la velocidad es más importante que la perfección.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Ventaja: Mínima latencia, ideal para tiempo real</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+                    </pagina_siete_protocolo>
+                </pagina_siete_bloque_protocolo>
+
+                <pagina_siete_bloque_protocolo>
+                    <pagina_siete_titulo_protocolo>Protocolos de Aplicación y Red</pagina_siete_titulo_protocolo>
+                    <pagina_siete_protocolo>
+                        <pagina_siete_nombre_protocolo>IP (Internet Protocol)</pagina_siete_nombre_protocolo>
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>El "GPS" de Internet. Direccionamiento lógico (ej: 192.168.1.1) y enrutamiento de paquetes. Define cómo fragmentar datos y cómo los routers determinan la mejor ruta hacia el destino.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+                    </pagina_siete_protocolo>
+
+                    <pagina_siete_protocolo>
+                        <pagina_siete_nombre_protocolo>HTTP/HTTPS</pagina_siete_nombre_protocolo>
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>HTTP: Protocolo de transferencia de hipertexto. Base de la web. </pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>HTTPS: HTTP + cifrado SSL/TLS. Protege datos sensibles (contraseñas, tarjetas de crédito). El candado en el navegador indica HTTPS activo.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+                    </pagina_siete_protocolo>
+
+                    <pagina_siete_protocolo>
+                        <pagina_siete_nombre_protocolo>SMTP/IMAP/POP3</pagina_siete_nombre_protocolo>
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>SMTP: Envío de correos. IMAP: Recepción sincronizada (mensajes en servidor). POP3: Recepción descargando al dispositivo local. IMAP es el estándar moderno recomendado.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+                    </pagina_siete_protocolo>
+
+                    <pagina_siete_protocolo>
+                        <pagina_siete_nombre_protocolo>DNS (Domain Name System)</pagina_siete_nombre_protocolo>
+                        <pagina_siete_caracteristicas_protocolo>
+                            <pagina_siete_caracteristica>Traduce nombres de dominio legibles (www.ejemplo.com) a direcciones IP numéricas (93.184.216.34). La "guía telefónica" de Internet. Sin DNS tendríamos que memorizar números IP.</pagina_siete_caracteristica>
+                        </pagina_siete_caracteristicas_protocolo>
+                    </pagina_siete_protocolo>
+                </pagina_siete_bloque_protocolo>
+            </pagina_siete_bloques_protocolos>
+        </pagina_siete_tipos_protocolos>
+        <!-- TABLA -->
+        <pagina_siete_tabla_protocolos>
+            <pagina_siete_titulo_tabla>Tabla de Protocolos de Comunicación</pagina_siete_titulo_tabla>
+            <pagina_siete_descripcion_tabla>Esta es fundamental para ver la diferencia entre "calidad" y "velocidad"</pagina_siete_descripcion_tabla>
+            <pagina_siete_tabla>
+                <pagina_siete_cabecera_tabla>
+                    <pagina_siete_titulo_cabecera>Característica</pagina_siete_titulo_cabecera>
+                    <pagina_siete_cabecera_tcp>TCP (Transmission Control Protocol)</pagina_siete_cabecera_tcp>
+                    <pagina_siete_cabecera_udp>UDP (User Datagram Protocol)</pagina_siete_cabecera_udp>
+                </pagina_siete_cabecera_tabla>
+
+                <pagina_siete_filas>
+                    <pagina_siete_fila>
+                        <pagina_siete_titulo_fila>Tipo de conexión</pagina_siete_titulo_fila>
+                        <pagina_siete_fila_tcp>Orientado a conexión (requiere "saludo" previo).</pagina_siete_fila_tcp>
+                        <pagina_siete_fila_udp>Sin conexión ("enviar y olvidar").</pagina_siete_fila_udp>
+                    </pagina_siete_fila>
+
+                    <pagina_siete_fila>
+                        <pagina_siete_titulo_fila>Fiabilidad</pagina_siete_titulo_fila>
+                        <pagina_siete_fila_tcp>Alta. Garantiza que los datos llegan. Reenvía paquetes perdidos.</pagina_siete_fila_tcp>
+                        <pagina_siete_fila_udp>Baja. No garantiza la llegada. Si se pierde un paquete, se pierde.</pagina_siete_fila_udp>
+                    </pagina_siete_fila>
+
+                    <pagina_siete_fila>
+                        <pagina_siete_titulo_fila>Orden</pagina_siete_titulo_fila>
+                        <pagina_siete_fila_tcp>Reconstruye los datos en el orden exacto (secuencia).</pagina_siete_fila_tcp>
+                        <pagina_siete_fila_udp>No garantiza el orden de llegada.</pagina_siete_fila_udp>
+                    </pagina_siete_fila>
+
+                    <pagina_siete_fila>
+                        <pagina_siete_titulo_fila>Velocidad</pagina_siete_titulo_fila>
+                        <pagina_siete_fila_tcp>Más lento (mayor carga de control).</pagina_siete_fila_tcp>
+                        <pagina_siete_fila_udp>Muy rápido (baja latencia).</pagina_siete_fila_udp>
+                    </pagina_siete_fila>
+
+                    <pagina_siete_fila>
+                        <pagina_siete_titulo_fila>Uso ideal</pagina_siete_titulo_fila>
+                        <pagina_siete_fila_tcp>Web (HTTP), Correo, Descarga de archivos, Chats de texto.</pagina_siete_fila_tcp>
+                        <pagina_siete_fila_udp>Streaming de video, Llamadas VoIP, Juegos online.</pagina_siete_fila_udp>
+                    </pagina_siete_fila>
+                </pagina_siete_filas>
+            </pagina_siete_tabla>
+        </pagina_siete_tabla_protocolos>
+    </pagina_siete_protocolos>
+</pagina_siete>

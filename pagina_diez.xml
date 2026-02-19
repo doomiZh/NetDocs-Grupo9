@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_diez [
+    <!ELEMENT pagina_diez (pagina_diez_hardwares)>
+        <!ELEMENT pagina_diez_hardwares (pagina_diez_titulo_hardwares,pagina_diez_descripcion_hardwares,pagina_diez_medios_transmiciones
+        ,pagina_diez_evoluciones_estandares,pagina_diez_tabla_componentes_red,pagina_diez_tabla_redes_inalambricas)>
+            <!ELEMENT pagina_diez_titulo_hardwares (#PCDATA)>
+            <!ELEMENT pagina_diez_descripcion_hardwares (#PCDATA)>
+            <!-- MEDIO TRANSMICIONES -->
+            <!ELEMENT pagina_diez_medios_transmiciones (pagina_diez_titulo_medios_transmiciones,pagina_diez_tipos_medios_transmiciones)>
+                <!ELEMENT pagina_diez_titulo_medios_transmiciones (#PCDATA)>
+                <!ELEMENT pagina_diez_tipos_medios_transmiciones (pagina_diez_tipo_medio_transmicion+)>
+                    <!ELEMENT pagina_diez_tipo_medio_transmicion (pagina_diez_titulo_medio,pagina_diez_descripcion_medio)>
+                        <!ELEMENT pagina_diez_titulo_medio (#PCDATA)>
+                        <!ELEMENT pagina_diez_descripcion_medio (#PCDATA)>
+            <!-- EVOLUCION DE LOS ESTANDARES -->
+            <!ELEMENT pagina_diez_evoluciones_estandares (pagina_diez_titulo_evoluciones_estandares,pagina_diez_descripcion_evoluciones_estandares
+            ,pagina_diez_evoluciones)>
+                <!ELEMENT pagina_diez_titulo_evoluciones_estandares (#PCDATA)>
+                <!ELEMENT pagina_diez_descripcion_evoluciones_estandares (#PCDATA)>
+
+                <!ELEMENT pagina_diez_evoluciones (pagina_diez_evolucion+)>
+                    <!ELEMENT pagina_diez_evolucion (pagina_diez_titulo_evolucion,pagina_diez_descripcion_evolucion)>
+                        <!ELEMENT pagina_diez_titulo_evolucion (#PCDATA)>
+                        <!ELEMENT pagina_diez_descripcion_evolucion (#PCDATA)>
+            <!-- TABLA COMPONENTES DE RED -->
+            <!ELEMENT pagina_diez_tabla_componentes_red (pagina_diez_titulo_tabla_componentes_red,pagina_diez_descripcion_tabla_componentes_red,
+            pagina_diez_tabla_componente)>
+                <!ELEMENT pagina_diez_titulo_tabla_componentes_red (#PCDATA)>
+                <!ELEMENT pagina_diez_descripcion_tabla_componentes_red (#PCDATA)>
+
+                <!ELEMENT pagina_diez_tabla_componente (pagina_diez_cabeceras_componentes,pagina_diez_filas_componentes)>
+                    <!ELEMENT pagina_diez_cabeceras_componentes (pagina_diez_cabecera_medio_componente,pagina_diez_cabecera_tipo_componente
+                    ,pagina_diez_cabecera_velocidad_componente,pagina_diez_cabecera_caso_uso_componente)>
+                        <!ELEMENT pagina_diez_cabecera_medio_componente (#PCDATA)>
+                        <!ELEMENT pagina_diez_cabecera_tipo_componente (#PCDATA)>
+                        <!ELEMENT pagina_diez_cabecera_velocidad_componente (#PCDATA)>
+                        <!ELEMENT pagina_diez_cabecera_caso_uso_componente (#PCDATA)>
+
+                    <!ELEMENT pagina_diez_filas_componentes (pagina_diez_fila_componente+)>
+                        <!ELEMENT pagina_diez_fila_componente (pagina_diez_fila_medio_componente,pagina_diez_fila_tipo_componente,pagina_diez_fila_velocidad_componente
+                        ,pagina_diez_fila_caso_uso_componente)>
+                            <!ELEMENT pagina_diez_fila_medio_componente (#PCDATA)>
+                            <!ELEMENT pagina_diez_fila_tipo_componente (#PCDATA)>
+                            <!ELEMENT pagina_diez_fila_velocidad_componente (#PCDATA)>
+                            <!ELEMENT pagina_diez_fila_caso_uso_componente (#PCDATA)>
+            <!-- TABLA REDES INALAMBRICAS -->
+            <!ELEMENT pagina_diez_tabla_redes_inalambricas (pagina_diez_cabeceras_redes_inalambricas,pagina_diez_filas_redes_inalambricas)>
+                <!ELEMENT pagina_diez_cabeceras_redes_inalambricas (pagina_diez_cabecera_estandar,pagina_diez_cabecera_nombre
+                ,pagina_diez_cabecera_frecuencia,pagina_diez_cabecera_caracteristicas)>
+                    <!ELEMENT pagina_diez_cabecera_estandar (#PCDATA)>
+                    <!ELEMENT pagina_diez_cabecera_nombre (#PCDATA)>
+                    <!ELEMENT pagina_diez_cabecera_frecuencia (#PCDATA)>
+                    <!ELEMENT pagina_diez_cabecera_caracteristicas (#PCDATA)>
+
+                <!ELEMENT pagina_diez_filas_redes_inalambricas (pagina_diez_fila_red_inalambrica+)>
+                    <!ELEMENT pagina_diez_fila_red_inalambrica (pagina_diez_fila_estandar,pagina_diez_fila_nombre,pagina_diez_fila_frecuencia
+                    ,pagina_diez_fila_caracteristicas)>
+                        <!ELEMENT pagina_diez_fila_estandar (#PCDATA)>
+                        <!ELEMENT pagina_diez_fila_nombre (#PCDATA)>
+                        <!ELEMENT pagina_diez_fila_frecuencia (#PCDATA)>
+                        <!ELEMENT pagina_diez_fila_caracteristicas (#PCDATA)>
+]>
+
+<pagina_diez>
+    <pagina_diez_hardwares>
+        <pagina_diez_titulo_hardwares>Componentes de Hardware en Redes Informáticas</pagina_diez_titulo_hardwares>
+        <pagina_diez_descripcion_hardwares>Una red funcional requiere diversos componentes de hardware especializados, desde los medios físicos que transportan señales hasta los dispositivos inteligentes que dirigen el tráfico. Comprender estos elementos es fundamental para diseñar, implementar y mantener redes eficientes.</pagina_diez_descripcion_hardwares>
+        <!-- MEDIO TRANSMICIONES -->
+        <pagina_diez_medios_transmiciones>
+            <pagina_diez_titulo_medios_transmiciones>Medios de Transmisión Cableados</pagina_diez_titulo_medios_transmiciones>
+            <pagina_diez_tipos_medios_transmiciones>
+                <pagina_diez_tipo_medio_transmicion>
+                    <pagina_diez_titulo_medio>Cable Par Trenzado (Cobre)</pagina_diez_titulo_medio>
+                    <pagina_diez_descripcion_medio>
+                        <![CDATA[ 
+                        <strong>Cat 5e:</strong> Hasta 1 Gbps, 100m máx. Uso: Hogares, oficinas pequeñas. Económico y suficiente para la mayoría.
+                        <strong>Cat 6:</strong> Hasta 10 Gbps en 55m, 1 Gbps en 100m. Uso: Oficinas profesionales, estudios de diseño. Mejor blindaje contra interferencias.
+                        <strong>Cat 6a/7:</strong> 10 Gbps sostenidos en 100m. Uso: Datacenters, infraestructuras exigentes. Máximo blindaje (S/FTP).
+                        ]]>
+                    </pagina_diez_descripcion_medio>
+                </pagina_diez_tipo_medio_transmicion>
+
+                <pagina_diez_tipo_medio_transmicion>
+                    <pagina_diez_titulo_medio>Fibra Óptica (Transmisión por Luz)</pagina_diez_titulo_medio>
+                    <pagina_diez_descripcion_medio>
+                        <![CDATA[ 
+                        <strong>Monomodo (SMF):</strong> Núcleo de 9 micrómetros. Un solo haz de luz. Distancias: 40-100+ km sin repetidores. Uso: Enlaces troncales ISP, conexiones entre ciudades, cables submarinos intercontinentales. Láser de alta precisión.
+                        <strong>Multimodo (MMF):</strong> Núcleo de 50-62.5 micrómetros. Múltiples haces de luz. Distancias: Hasta 2 km. Uso: Campus, edificios, datacenters internos. LED más económico. Velocidades: 10/40/100 Gbps.
+                        <strong>Ventajas de fibra:</strong> Inmunidad total a interferencias electromagnéticas, sin diafonía, distancias enormes, ancho de banda masivo (Terabits/s), seguridad (difícil interceptar luz). <strong>Desventaja:</strong> Coste inicial más alto, requiere técnicos especializados para empalmes.
+                        ]]>
+                    </pagina_diez_descripcion_medio>
+                </pagina_diez_tipo_medio_transmicion>
+            </pagina_diez_tipos_medios_transmiciones>
+        </pagina_diez_medios_transmiciones>
+
+        <!-- EVOLUCION DE LOS ESTANDARES -->
+        <pagina_diez_evoluciones_estandares>
+            <pagina_diez_titulo_evoluciones_estandares>Evolución de los Estándares Wi-Fi (802.11)</pagina_diez_titulo_evoluciones_estandares>
+            <pagina_diez_descripcion_evoluciones_estandares>El Wi-Fi ha evolucionado dramáticamente en velocidad, eficiencia y capacidad de gestionar dispositivos simultáneos.</pagina_diez_descripcion_evoluciones_estandares>
+            <pagina_diez_evoluciones>
+                <pagina_diez_evolucion>
+                    <pagina_diez_titulo_evolucion>802.11b/g</pagina_diez_titulo_evolucion>
+                    <pagina_diez_descripcion_evolucion>
+                        <![CDATA[ 
+                        Banda: 2.4 GHz. Velocidad: 11-54 Mbps. <strong>Problema:</strong> Banda saturadísima (interferencias con microondas, Bluetooth, teléfonos inalámbricos). Obsoleto.
+                        ]]>
+                    </pagina_diez_descripcion_evolucion>
+                </pagina_diez_evolucion>
+
+                <pagina_diez_evolucion>
+                    <pagina_diez_titulo_evolucion>802.11ac (Wi-Fi 5)</pagina_diez_titulo_evolucion>
+                    <pagina_diez_descripcion_evolucion>
+                        <![CDATA[ 
+                        Solo 5 GHz. Velocidad: Hasta 3.5 Gbps. MU-MIMO (Multi-User MIMO): El router puede comunicarse con múltiples dispositivos simultáneamente. Beamforming: Enfoca señal hacia dispositivos específicos. Estándar dominante 2013-2019.
+                        ]]>
+                    </pagina_diez_descripcion_evolucion>
+                </pagina_diez_evolucion>
+
+                <pagina_diez_evolucion>
+                    <pagina_diez_titulo_evolucion>802.11n (Wi-Fi 4)</pagina_diez_titulo_evolucion>
+                    <pagina_diez_descripcion_evolucion>
+                        <![CDATA[ 
+                        Banda dual: 2.4 y 5 GHz. Velocidad: Hasta 600 Mbps. Introduce MIMO (Multiple Input Multiple Output): múltiples antenas para mejor rendimiento. Gran avance en velocidad.
+                        ]]>
+                    </pagina_diez_descripcion_evolucion>
+                </pagina_diez_evolucion>
+
+                <pagina_diez_evolucion>
+                    <pagina_diez_titulo_evolucion>802.11ax (Wi-Fi 6/6E)</pagina_diez_titulo_evolucion>
+                    <pagina_diez_descripcion_evolucion>
+                        <![CDATA[ 
+                        Bandas: 2.4, 5 y 6 GHz (6E). Velocidad: Hasta 9.6 Gbps. <strong>Revolución en eficiencia:</strong> OFDMA permite servir múltiples dispositivos en cada transmisión. TWT (Target Wake Time) reduce consumo en IoT. Ideal para ambientes densos: estadios, aeropuertos, hogares con 50+ dispositivos IoT. <strong>El futuro es Wi-Fi 6E.</strong>
+                        ]]>
+                    </pagina_diez_descripcion_evolucion>
+                </pagina_diez_evolucion>
+            </pagina_diez_evoluciones>
+        </pagina_diez_evoluciones_estandares>
+
+        <!-- TABLA COMPONENTES DE RED -->
+        <pagina_diez_tabla_componentes_red>
+            <pagina_diez_titulo_tabla_componentes_red>Tabla de Componentes de una Red</pagina_diez_titulo_tabla_componentes_red>
+            <pagina_diez_descripcion_tabla_componentes_red>Para diferenciar rápidamente entre los tipos de cables y ondas.</pagina_diez_descripcion_tabla_componentes_red>
+            <pagina_diez_tabla_componente>
+                <pagina_diez_cabeceras_componentes>
+                    <pagina_diez_cabecera_medio_componente>Medio</pagina_diez_cabecera_medio_componente>
+                    <pagina_diez_cabecera_tipo_componente>Tipo</pagina_diez_cabecera_tipo_componente>
+                    <pagina_diez_cabecera_velocidad_componente>Velocidad / Alcance</pagina_diez_cabecera_velocidad_componente>
+                    <pagina_diez_cabecera_caso_uso_componente>Caso de Uso Típico</pagina_diez_cabecera_caso_uso_componente>
+                </pagina_diez_cabeceras_componentes>
+
+                <pagina_diez_filas_componentes>
+                    <pagina_diez_fila_componente>
+                        <pagina_diez_fila_medio_componente>Cable Par Trenzado (UTP)</pagina_diez_fila_medio_componente>
+                        <pagina_diez_fila_tipo_componente>Guiado (Cobre)</pagina_diez_fila_tipo_componente>
+                        <pagina_diez_fila_velocidad_componente>
+                            <![CDATA[ 
+                            1 Gbps - 10 Gbps (Corto alcance <100m).
+                            ]]>
+                        </pagina_diez_fila_velocidad_componente>
+                        <pagina_diez_fila_caso_uso_componente>Redes LAN de oficinas, conexión de PC a Switch.</pagina_diez_fila_caso_uso_componente>
+                    </pagina_diez_fila_componente>
+
+                    <pagina_diez_fila_componente>
+                        <pagina_diez_fila_medio_componente>Fibra Óptica</pagina_diez_fila_medio_componente>
+                        <pagina_diez_fila_tipo_componente>Guiado (Luz)</pagina_diez_fila_tipo_componente>
+                        <pagina_diez_fila_velocidad_componente>
+                            <![CDATA[ 
+                            >100 Gbps (Largo alcance, kms).
+                            ]]>
+                        </pagina_diez_fila_velocidad_componente>
+                        <pagina_diez_fila_caso_uso_componente>Redes troncales (WAN), conexiones entre edificios o ciudades.</pagina_diez_fila_caso_uso_componente>
+                    </pagina_diez_fila_componente>
+
+                    <pagina_diez_fila_componente>
+                        <pagina_diez_fila_medio_componente>Wi-Fi (802.11)</pagina_diez_fila_medio_componente>
+                        <pagina_diez_fila_tipo_componente>No Guiado (Radio)</pagina_diez_fila_tipo_componente>
+                        <pagina_diez_fila_velocidad_componente>
+                            <![CDATA[ 
+                            Variable (depende de obstáculos).
+                            ]]>
+                        </pagina_diez_fila_velocidad_componente>
+                        <pagina_diez_fila_caso_uso_componente>Dispositivos móviles, portátiles, zonas comunes.</pagina_diez_fila_caso_uso_componente>
+                    </pagina_diez_fila_componente>
+
+                    <pagina_diez_fila_componente>
+                        <pagina_diez_fila_medio_componente>Microondas</pagina_diez_fila_medio_componente>
+                        <pagina_diez_fila_tipo_componente>No Guiado (Ondas)</pagina_diez_fila_tipo_componente>
+                        <pagina_diez_fila_velocidad_componente>
+                            <![CDATA[ 
+                            Largo alcance (línea de vista).
+                            ]]>
+                        </pagina_diez_fila_velocidad_componente>
+                        <pagina_diez_fila_caso_uso_componente>Conectar dos edificios lejanos sin poner cables físicos.</pagina_diez_fila_caso_uso_componente>
+                    </pagina_diez_fila_componente>
+                </pagina_diez_filas_componentes>
+            </pagina_diez_tabla_componente>
+        </pagina_diez_tabla_componentes_red>
+
+        <!-- TABLA REDES INALAMBRICAS -->
+        <pagina_diez_tabla_redes_inalambricas>
+            <pagina_diez_cabeceras_redes_inalambricas>
+                <pagina_diez_cabecera_estandar>Estándar</pagina_diez_cabecera_estandar>
+                <pagina_diez_cabecera_nombre>Nombre Común</pagina_diez_cabecera_nombre>
+                <pagina_diez_cabecera_frecuencia>Frecuencia</pagina_diez_cabecera_frecuencia>
+                <pagina_diez_cabecera_caracteristicas>Característica Clave</pagina_diez_cabecera_caracteristicas>
+            </pagina_diez_cabeceras_redes_inalambricas>
+            
+            <pagina_diez_filas_redes_inalambricas>
+                <pagina_diez_fila_red_inalambrica>
+                    <pagina_diez_fila_estandar>802.11n</pagina_diez_fila_estandar>
+                    <pagina_diez_fila_nombre>Wi-Fi 4</pagina_diez_fila_nombre>
+                    <pagina_diez_fila_frecuencia>2.4 GHz y 5 GHz</pagina_diez_fila_frecuencia>
+                    <pagina_diez_fila_caracteristicas>Primer gran salto de velocidad (MIMO).</pagina_diez_fila_caracteristicas>
+                </pagina_diez_fila_red_inalambrica>
+
+                <pagina_diez_fila_red_inalambrica>
+                    <pagina_diez_fila_estandar>802.11ac</pagina_diez_fila_estandar>
+                    <pagina_diez_fila_nombre>Wi-Fi 5</pagina_diez_fila_nombre>
+                    <pagina_diez_fila_frecuencia>Solo 5 GHz</pagina_diez_fila_frecuencia>
+                    <pagina_diez_fila_caracteristicas>Alta velocidad, ideal para video HD.</pagina_diez_fila_caracteristicas>
+                </pagina_diez_fila_red_inalambrica>
+                
+                <pagina_diez_fila_red_inalambrica>
+                    <pagina_diez_fila_estandar>802.11ax</pagina_diez_fila_estandar>
+                    <pagina_diez_fila_nombre>Wi-Fi 6</pagina_diez_fila_nombre>
+                    <pagina_diez_fila_frecuencia>2.4 GHz y 5 GHz</pagina_diez_fila_frecuencia>
+                    <pagina_diez_fila_caracteristicas>Eficiencia. Diseñado para muchos dispositivos a la vez (IoT).</pagina_diez_fila_caracteristicas>
+                </pagina_diez_fila_red_inalambrica>
+
+            </pagina_diez_filas_redes_inalambricas>
+        </pagina_diez_tabla_redes_inalambricas>
+
+    </pagina_diez_hardwares>
+</pagina_diez>

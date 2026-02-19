@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_cinco [
+<!ELEMENT pagina_cinco (pagina_cinco_titulo_arquitectura,pagina_cinco_descripcion_arquitectura,pagina_cinco_capas_de_la_comunicacion)>
+    <!ELEMENT pagina_cinco_titulo_arquitectura (#PCDATA)>
+    <!ELEMENT pagina_cinco_descripcion_arquitectura (#PCDATA)>
+    <!ELEMENT pagina_cinco_capas_de_la_comunicacion (pagina_cinco_capa+)>
+
+    <!ELEMENT pagina_cinco_capa (pagina_cinco_subtitulo,pagina_cinco_descripcion)>
+        <!ELEMENT pagina_cinco_subtitulo (#PCDATA)>
+        <!ELEMENT pagina_cinco_descripcion (#PCDATA)>
+]>
+
+<pagina_cinco>
+    <pagina_cinco_titulo_arquitectura>
+        Modelo OSI: Las 7 Capas de la Comunicación
+    </pagina_cinco_titulo_arquitectura>
+    <pagina_cinco_descripcion_arquitectura>
+            <![CDATA[ El modelo OSI (Open Systems Interconnection) es un modelo estandarizado teórico y modular desarrollado por la ISO que divide el proceso de
+            comunicación en red en 7 capas independientes.
+
+            ISO (Organización Internacional de Normalización) es una <strong>entidad independiente que desarrolla y publica estándares (normas) internacionales
+            para asegurar la calidad, seguridad y eficiencia de productos, servicios y sistemas.</strong>
+
+            Su diseño modular permite que si algo falla, los técnicos puedan identificar rápidamente en qué capa está el problema, facilitando el diagnóstico y la
+            reparación.]]>  
+        </pagina_cinco_descripcion_arquitectura>
+    
+    <!-- CAPAS -->
+    <pagina_cinco_capas_de_la_comunicacion>
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>7. Aplicación</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Interfaz directa con el usuario final. Aquí operan navegadores web, clientes de
+                correo,
+                aplicaciones de mensajería. Protocolos: HTTP, FTP, SMTP, DNS.
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>6. Presentación</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Formato y representación de datos. Cifrado, compresión y conversión de formatos
+                (JPEG, MP3,
+                SSL/TLS). Garantiza que el emisor y receptor "hablen el mismo idioma".
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>5. Sesión</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Gestiona el diálogo entre aplicaciones. Establece, mantiene y finaliza sesiones de
+                comunicación. Control de tokens y sincronización de datos.
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>4. Transporte</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Entrega confiable de datos extremo a extremo. Segmentación, control de flujo y
+                corrección de errores. Protocolos principales: TCP (fiable, orientado a conexión) y
+                UDP
+                (rápido, sin conexión).
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>3. Red</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Direccionamiento lógico (IP) y enrutamiento de paquetes. Los routers operan aquí,
+                decidiendo la mejor ruta para cada paquete. Protocolo principal: IP (IPv4/IPv6).
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>2. Enlace de Datos</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Direccionamiento físico (MAC), control de acceso al medio, detección de
+                errores en el nivel de trama. Los switches operan en esta capa. Protocolos:
+                Ethernet, Wi-Fi (802.11).
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+
+        <pagina_cinco_capa>
+            <pagina_cinco_subtitulo>1. Física</pagina_cinco_subtitulo>
+            <pagina_cinco_descripcion>
+                Hardware puro: cables, conectores, voltajes, frecuencias de radio.
+                Transmisión de bits en bruto (0s y 1s) a través del medio físico.
+                Especificaciones de cables Cat6, fibra óptica, ondas Wi-Fi.
+            </pagina_cinco_descripcion>
+        </pagina_cinco_capa>
+    </pagina_cinco_capas_de_la_comunicacion>
+</pagina_cinco>

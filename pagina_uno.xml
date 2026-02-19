@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_uno [
+<!ELEMENT pagina_uno (pagina_uno_titulo,pagina_uno_descripcion,imagen_pagina_uno)>
+    <!ELEMENT pagina_uno_titulo (#PCDATA)>
+    <!ELEMENT pagina_uno_descripcion (#PCDATA)>
+    <!ELEMENT imagen_pagina_uno (#PCDATA)>
+]>
+
+    <pagina_uno>
+        <pagina_uno_titulo>Características de las Redes de Computadoras</pagina_uno_titulo>
+        <pagina_uno_descripcion>Una exploración completa de los fundamentos de la conectividad digital: desde
+            los
+            conceptos básicos hasta las arquitecturas modernas que sustentan nuestra sociedad
+            interconectada
+        </pagina_uno_descripcion>
+        <imagen_pagina_uno>imagenPag1.png</imagen_pagina_uno>
+    </pagina_uno>

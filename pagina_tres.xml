@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_tres [
+    <!ELEMENT pagina_tres (pagina_tres_titulo_clasificacion,pagina_tres_descripcion_clasificacion,pagina_tres_tipos_de_redes)>
+        <!ELEMENT pagina_tres_titulo_clasificacion (#PCDATA)>
+        <!ELEMENT pagina_tres_descripcion_clasificacion (#PCDATA)>
+
+        <!ELEMENT pagina_tres_tipos_de_redes (pagina_tres_red+)>
+            <!ELEMENT pagina_tres_red (imagen_pagina_tres,pagina_tres_subtitulo_clasificacion,pagina_tres_descripcion)>
+                <!ELEMENT imagen_pagina_tres (#PCDATA)>
+                <!ELEMENT pagina_tres_subtitulo_clasificacion (#PCDATA)>
+                <!ELEMENT pagina_tres_descripcion (#PCDATA)>
+]>
+
+<pagina_tres>
+    <pagina_tres_titulo_clasificacion>
+        Clasificación de Redes según su Alcance Geográfico
+    </pagina_tres_titulo_clasificacion>
+    <pagina_tres_descripcion_clasificacion>
+        Las redes se clasifican principalmente por el área geográfica que cubren, determinando
+        sus características técnicas, velocidad de transmisión y casos de
+        uso específicos.
+    </pagina_tres_descripcion_clasificacion>
+
+    <!-- TIPOS DE REDES -->
+    <pagina_tres_tipos_de_redes>
+        <pagina_tres_red>
+            <imagen_pagina_tres>imagen_pan_pagina_tres.png</imagen_pagina_tres>
+            <pagina_tres_subtitulo_clasificacion>
+                PAN (Red de Área Personal)
+            </pagina_tres_subtitulo_clasificacion>
+            <pagina_tres_descripcion>
+            <![CDATA[ Alcance de pocos metros,
+                generalmente hasta 10m. Conecta
+                dispositivos personales cercanos al
+                usuario.
+                <strong>Ejemplo típico:</strong> Bluetooth
+                conectando un smartwatch,
+                auriculares inalámbricos o teclado
+                al teléfono móvil. Tecnologías:
+                Bluetooth, NFC, USB.]]>      
+            </pagina_tres_descripcion>
+        </pagina_tres_red>
+
+        <pagina_tres_red>
+            <imagen_pagina_tres>imagen_lan_pagina_tres.png</imagen_pagina_tres>
+            <pagina_tres_subtitulo_clasificacion>
+                LAN (Red de Área Local)
+            </pagina_tres_subtitulo_clasificacion>
+            <pagina_tres_descripcion>
+                <![CDATA[ Cubre edificios individuales o
+                campus pequeños (hasta 1-2 km).
+                Alta velocidad y bajo coste.
+                <strong>Ejemplo típico:</strong> La red Wi-Fi y
+                Ethernet de una oficina, casa,
+                escuela o centro comercial. Permite
+                compartir impresoras, archivos y
+                conexión a Internet.]]>
+            </pagina_tres_descripcion>
+        </pagina_tres_red>
+
+        <pagina_tres_red>
+            <imagen_pagina_tres>imagen_man_pagina_tres.png</imagen_pagina_tres>
+            <pagina_tres_subtitulo_clasificacion>
+                WAN (Red de Área Amplia)
+            </pagina_tres_subtitulo_clasificacion>
+            <pagina_tres_descripcion>
+                <![CDATA[ Cobertura del tamaño de una
+                ciudad completa (hasta 50 km).
+                <strong>Ejemplo típico:</strong>Red que
+                interconecta varios campus
+                universitarios dispersos en una
+                misma ciudad, o red de fibra óptica
+                municipal que conecta edificios
+                gubernamentales.]]>
+            </pagina_tres_descripcion>
+        </pagina_tres_red>
+
+        <pagina_tres_red>
+            <imagen_pagina_tres>imagen_wan_pagina_tres.png</imagen_pagina_tres>
+            <pagina_tres_subtitulo_clasificacion>
+                WAN (Red de Área Amplia)
+            </pagina_tres_subtitulo_clasificacion>
+            <pagina_tres_descripcion>
+                <![CDATA[ Alcance global, continental o
+                incluso mundial.
+                <strong>Ejemplo típico:</strong> Internet es la WAN
+                más grande del mundo. También
+                redes corporativas multinacionales
+                que conectan oficinas en diferentes
+                países y continentes mediante
+                enlaces satelitales y cables
+                submarinos.]]>
+            </pagina_tres_descripcion>
+        </pagina_tres_red>
+    </pagina_tres_tipos_de_redes>
+</pagina_tres>

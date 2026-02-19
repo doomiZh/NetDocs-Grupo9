@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE proyecto [
+    <!ENTITY pag_uno SYSTEM "pagina_uno.xml">
+    <!ENTITY pag_dos SYSTEM "pagina_dos.xml">
+    <!ENTITY pag_tres SYSTEM "pagina_tres.xml">
+    <!ENTITY pag_cuatro SYSTEM "pagina_cuatro.xml">
+    <!ENTITY pag_cinco SYSTEM "pagina_cinco.xml">
+    <!ENTITY pag_seis SYSTEM "pagina_seis.xml">
+    <!ENTITY pag_siete SYSTEM "pagina_siete.xml">
+    <!ENTITY pag_ocho SYSTEM "pagina_ocho.xml">
+    <!ENTITY pag_nueve SYSTEM "pagina_nueve.xml"> 
+    <!ENTITY pag_diez SYSTEM "pagina_diez.xml">
+
+    <!ELEMENT proyecto (pagina_uno,pagina_dos,pagina_tres,pagina_cuatro,pagina_cinco,pagina_seis,pagina_siete,pagina_ocho
+    ,pagina_nueve,pagina_diez)>
+        <!ELEMENT pagina_uno (#PCDATA)>
+        <!ELEMENT pagina_dos (#PCDATA)>
+        <!ELEMENT pagina_tres (#PCDATA)>
+        <!ELEMENT pagina_cuatro (#PCDATA)>
+        <!ELEMENT pagina_cinco (#PCDATA)>
+        <!ELEMENT pagina_seis (#PCDATA)>
+        <!ELEMENT pagina_siete (#PCDATA)>
+        <!ELEMENT pagina_ocho (#PCDATA)>
+        <!ELEMENT pagina_nueve (#PCDATA)>
+        <!ELEMENT pagina_diez (#PCDATA)>
+]>
+
+<proyecto>
+    <pagina_uno>&pag_uno;</pagina_uno>
+    <pagina_dos>&pag_dos;</pagina_dos>
+    <pagina_tres>&pag_tres;</pagina_tres>
+    <pagina_cuatro>&pag_cuatro;</pagina_cuatro>
+    <pagina_cinco>&pag_cinco;</pagina_cinco>
+    <pagina_seis>&pag_seis;</pagina_seis>
+    <pagina_siete>&pag_siete;</pagina_siete>
+    <pagina_ocho>&pag_ocho;</pagina_ocho>
+    <pagina_nueve>&pag_nueve;</pagina_nueve>
+    <pagina_diez>&pag_diez;</pagina_diez>
+</proyecto>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_cuatro[
+<!ELEMENT pagina_cuatro (pagina_cuatro_titulo_medios_de_transmision,pagina_cuatro_tipos_de_conexiones)>
+    <!ELEMENT pagina_cuatro_titulo_medios_de_transmision (#PCDATA)>
+
+    <!ELEMENT pagina_cuatro_tipos_de_conexiones (pagina_cuatro_conexion+)>
+    <!ELEMENT pagina_cuatro_conexion (pagina_cuatro_subtitulo_conexion,pagina_cuatro_descripcion_conexion,pagina_cuatro_tipos_conexion)>
+        <!ELEMENT pagina_cuatro_subtitulo_conexion (#PCDATA)>
+        <!ELEMENT pagina_cuatro_descripcion_conexion (#PCDATA)>
+        
+        <!ELEMENT pagina_cuatro_tipos_conexion (pagina_cuatro_titulo_uno,pagina_cuatro_descripcion_uno,pagina_cuatro_titulo_dos,
+        pagina_cuatro_descripcion_dos)>
+            <!ELEMENT pagina_cuatro_titulo_uno (#PCDATA)>
+            <!ELEMENT pagina_cuatro_descripcion_uno (#PCDATA)>
+            <!ELEMENT pagina_cuatro_titulo_dos (#PCDATA)>
+            <!ELEMENT pagina_cuatro_descripcion_dos (#PCDATA)>
+]>
+
+<pagina_cuatro>
+    <pagina_cuatro_titulo_medios_de_transmision>
+        Tipos de Conexión: Guiadas e Inalámbricas
+    </pagina_cuatro_titulo_medios_de_transmision>
+
+    <!-- CONEXION -->
+    <pagina_cuatro_tipos_de_conexiones>
+        <pagina_cuatro_conexion>
+            <pagina_cuatro_subtitulo_conexion>Conexiones por Cable (Medios Guiados)</pagina_cuatro_subtitulo_conexion>
+            <pagina_cuatro_descripcion_conexion>
+                Las conexiones físicas ofrecen mayor estabilidad, seguridad y
+                velocidades predecibles, aunque limitan la movilidad.
+            </pagina_cuatro_descripcion_conexion>
+            <pagina_cuatro_tipos_conexion>
+                <pagina_cuatro_titulo_uno>Ethernet (Par Trenzado)</pagina_cuatro_titulo_uno>
+                <pagina_cuatro_descripcion_uno>
+                <![CDATA[ El estándar dominante en redes LAN. Utiliza cables de cobre con
+                        pares de hilos trenzados que reducen interferencias
+                        electromagnéticas.
+                        <strong>Cat5e:</strong> Hasta 1 Gbps, 100 metros máximo
+                        <strong>Cat6:</strong> Hasta 10 Gbps en distancias cortas
+                        <strong>Cat6a/Cat7:</strong> 10 Gbps sostenidos, blindaje mejorado
+                        Ventajas: Alta velocidad, bajo coste, estabilidad. Uso: Oficinas,
+                        hogares, centros de datos.]]>
+            </pagina_cuatro_descripcion_uno>
+
+                <pagina_cuatro_titulo_dos>Fibra Óptica</pagina_cuatro_titulo_dos>
+                <pagina_cuatro_descripcion_dos>
+                        <![CDATA[ Transmite datos mediante pulsos de luz a través de filamentos de
+                        vidrio o plástico ultrapuros. Tecnología de mayor rendimiento
+                        disponible.
+                        <strong>Monomodo:</strong> Un solo haz de luz, largas distancias (100+ km),
+                        costosa
+                        <strong>Multimodo:</strong> Múltiples haces, distancias cortas (2 km), más
+                        económica
+                        Ventajas: Velocidades de Terabits/s, inmune a interferencias,
+                        distancias enormes. Uso: Redes troncales, ISPs, datacenters.]]>
+            </pagina_cuatro_descripcion_dos>
+            </pagina_cuatro_tipos_conexion>
+        </pagina_cuatro_conexion>
+
+        <pagina_cuatro_conexion>
+            <pagina_cuatro_subtitulo_conexion>Conexiones Inalámbricas (Medios No Guiados)</pagina_cuatro_subtitulo_conexion>
+            <pagina_cuatro_descripcion_conexion>
+                Utilizan ondas electromagnéticas para transmitir datos sin cables físicos,
+                proporcionando movilidad y flexibilidad.
+            </pagina_cuatro_descripcion_conexion>
+            <pagina_cuatro_tipos_conexion>
+                <pagina_cuatro_titulo_uno>Wi-Fi (Estándares 802.11)</pagina_cuatro_titulo_uno>
+                <pagina_cuatro_descripcion_uno>
+                        <![CDATA[ Utiliza ondas de radio en las bandas de 2.4 GHz, 5 GHz y 6 GHz
+                        (Wi-Fi 6E). Permite movilidad total dentro del área de cobertura.
+                        Alcance: 30-100 metros (interior/exterior)
+                        Velocidad: Hasta 9.6 Gbps (802.11ax Wi-Fi 6)
+                        Flexibilidad para dispositivos móviles
+                        Desventajas: Susceptible a interferencias, menor seguridad que
+                        cable, velocidad variable según distancia y obstáculos.]]>                       
+            </pagina_cuatro_descripcion_uno>
+
+                <pagina_cuatro_titulo_dos>Redes Híbridas</pagina_cuatro_titulo_dos>
+                <pagina_cuatro_descripcion_dos>
+                        <![CDATA[ Combinan lo mejor de ambos mundos: conexiones cableadas para
+                        equipos fijos que requieren máximo rendimiento y Wi-Fi para
+                        dispositivos móviles.
+                        <strong>Ejemplo típico:</strong> Una oficina con servidores y PCs de escritorio
+                        conectados por Ethernet Gigabit, pero portátiles, tablets y
+                        smartphones usando Wi-Fi 6 para movilidad.
+                        Esta es la configuración más común y recomendada actualmente.]]>
+            </pagina_cuatro_descripcion_dos>
+            </pagina_cuatro_tipos_conexion>
+        </pagina_cuatro_conexion>
+    </pagina_cuatro_tipos_de_conexiones>
+</pagina_cuatro>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pagina_seis [
+    <!ELEMENT pagina_seis (pagina_seis_tcp_ip)>
+        <!-- TCP/IP -->
+        <!ELEMENT pagina_seis_tcp_ip (pagina_seis_titulo_tcpip,pagina_seis_descripcion_tcpip,pagina_seis_imagen_tcpip,
+        pagina_seis_representaciones_tcpip,pagina_seis_importancia,pagina_seis_tabla_tcpip,pagina_seis_pruebas,pagina_seis_adaptador,
+        pagina_seis_configuracion_red,pagina_seis_direccion_ip)>
+
+            <!ELEMENT pagina_seis_titulo_tcpip (#PCDATA)>
+            <!ELEMENT pagina_seis_descripcion_tcpip (#PCDATA)>
+            <!ELEMENT pagina_seis_imagen_tcpip (#PCDATA)>
+
+            <!ELEMENT pagina_seis_representaciones_tcpip (pagina_seis_representacion+)>
+                <!ELEMENT pagina_seis_representacion (pagina_seis_titulo_representacion,pagina_seis_descripcion_representacion)>
+                <!ELEMENT pagina_seis_titulo_representacion (#PCDATA)>
+                <!ELEMENT pagina_seis_descripcion_representacion (#PCDATA)>
+
+            <!ELEMENT pagina_seis_importancia (#PCDATA)>
+            <!-- TABLA TCP/IP -->
+            <!ELEMENT pagina_seis_tabla_tcpip (pagina_seis_titulo_tabla_tcpip,pagina_seis_tabla_descripcion,pagina_seis_tabla)>
+                <!ELEMENT pagina_seis_titulo_tabla_tcpip (#PCDATA)>
+                <!ELEMENT pagina_seis_tabla_descripcion (#PCDATA)>
+
+                <!ELEMENT pagina_seis_tabla (pagina_seis_cabecera_tabla,pagina_seis_filas)>
+                    <!ELEMENT pagina_seis_cabecera_tabla (pagina_seis_titulo_cabecera,pagina_seis_cabecera_funcion,pagina_seis_cabecera_capa
+                    ,pagina_seis_cabecera_protocolo)>
+                        <!ELEMENT pagina_seis_titulo_cabecera (#PCDATA)>
+                        <!ELEMENT pagina_seis_cabecera_funcion (#PCDATA)>
+                        <!ELEMENT pagina_seis_cabecera_capa (#PCDATA)>
+                        <!ELEMENT pagina_seis_cabecera_protocolo (#PCDATA)>
+
+                <!ELEMENT pagina_seis_filas (pagina_seis_fila+)>
+                    <!ELEMENT pagina_seis_fila (pagina_seis_titulo_fila,pagina_seis_fila_funcion,pagina_seis_fila_capa,pagina_seis_fila_protocolo)>
+                        <!ELEMENT pagina_seis_titulo_fila (#PCDATA)>
+                        <!ELEMENT pagina_seis_fila_funcion (#PCDATA)>
+                        <!ELEMENT pagina_seis_fila_capa (#PCDATA)>
+                        <!ELEMENT pagina_seis_fila_protocolo (#PCDATA)>
+            <!-- PRUEBAS -->
+            <!ELEMENT pagina_seis_pruebas (pagina_seis_titulo_pruebas,pagina_seis_explicacion_pruebas,pagina_seis_imagen_prueba_consola)>
+                <!ELEMENT pagina_seis_titulo_pruebas (#PCDATA)>
+                <!ELEMENT pagina_seis_explicacion_pruebas (#PCDATA)>
+                <!ELEMENT pagina_seis_imagen_prueba_consola (#PCDATA)>
+            <!-- ADAPTADOR -->
+            <!ELEMENT pagina_seis_adaptador (pagina_seis_titulo_adaptador,pagina_seis_descripcion_adaptador,pagina_seis_caracteristicas_adaptador)>
+                <!ELEMENT pagina_seis_titulo_adaptador (#PCDATA)>
+                <!ELEMENT pagina_seis_descripcion_adaptador (#PCDATA)>
+
+                <!ELEMENT pagina_seis_caracteristicas_adaptador (pagina_seis_caracteristica_adaptador+)>
+                    <!ELEMENT pagina_seis_caracteristica_adaptador (pagina_seis_titulo_caracteristica,pagina_seis_puntos_caracteristicas)>
+                        <!ELEMENT pagina_seis_titulo_caracteristica (#PCDATA)>
+
+                        <!ELEMENT pagina_seis_puntos_caracteristicas (pagina_seis_punto_caracteristica+)>
+                            <!ELEMENT pagina_seis_punto_caracteristica (pagina_seis_caracteristica,pagina_seis_detalles_caracteristicas?)>
+                                <!ELEMENT pagina_seis_caracteristica (#PCDATA)>
+
+                                <!ELEMENT pagina_seis_detalles_caracteristicas (pagina_seis_detalle_caracteristica+)>
+                                    <!ELEMENT pagina_seis_detalle_caracteristica (pagina_seis_detalle)>
+                                        <!ELEMENT pagina_seis_detalle (#PCDATA)>
+            <!-- COMO CONFIGURAR LA RED ("El cuadro de Propiedades") -->
+            <!ELEMENT pagina_seis_configuracion_red (pagina_seis_titulo_configuracion_red,pagina_seis_descripcion_configuracion_red
+            ,pagina_seis_atajos_configuracion_red,pagina_seis_pasos_configuraciones_red,pagina_seis_pasos_conexiones_red)>
+                <!ELEMENT pagina_seis_titulo_configuracion_red (#PCDATA)>
+                <!ELEMENT pagina_seis_descripcion_configuracion_red (#PCDATA)>
+
+                <!ELEMENT pagina_seis_atajos_configuracion_red (pagina_seis_atajo_configuracion_red+)>
+                    <!ELEMENT pagina_seis_atajo_configuracion_red (pagina_seis_atajo)>
+                        <!ELEMENT pagina_seis_atajo (#PCDATA)>
+
+                <!ELEMENT pagina_seis_pasos_configuraciones_red (pagina_seis_pasos_configuracion_red+)>
+                    <!ELEMENT pagina_seis_pasos_configuracion_red (pagina_seis_paso_descripcion,pagina_seis_imagenes_paso+)>
+                        <!ELEMENT pagina_seis_paso_descripcion (#PCDATA)>
+                        <!ELEMENT pagina_seis_imagenes_paso (pagina_seis_imagen_paso)>
+                            <!ELEMENT pagina_seis_imagen_paso (#PCDATA)>
+
+                <!ELEMENT pagina_seis_pasos_conexiones_red (pagina_seis_titulo_pasos_conexiones_red,pagina_seis_bloque_pasos_conexiones_red
+                ,pagina_seis_bloque_pasos_ethernet,pagina_seis_aclaracion)>
+                    <!ELEMENT pagina_seis_titulo_pasos_conexiones_red (#PCDATA)>
+                    
+                    <!ELEMENT pagina_seis_bloque_pasos_conexiones_red (pagina_seis_descripcion_paso_conexiones_red,pagina_seis_conjuntos_objetos_conexiones_red)>
+                        <!ELEMENT pagina_seis_descripcion_paso_conexiones_red (#PCDATA)>
+
+                        <!ELEMENT pagina_seis_conjuntos_objetos_conexiones_red (pagina_seis_conjunto_objetos_conexiones_red+)>
+                            <!ELEMENT pagina_seis_conjunto_objetos_conexiones_red (pagina_seis_objeto_conexiones_red)>
+                                <!ELEMENT pagina_seis_objeto_conexiones_red (#PCDATA)>
+
+                    <!ELEMENT pagina_seis_bloque_pasos_ethernet (pagina_seis_descripcion_paso_ethernet,pagina_seis_resultado_paso_ethernet,
+                    pagina_seis_conjuntos_objetos_ethernet)>
+                        <!ELEMENT pagina_seis_descripcion_paso_ethernet (#PCDATA)>
+                        <!ELEMENT pagina_seis_resultado_paso_ethernet (#PCDATA)>
+
+                        <!ELEMENT pagina_seis_conjuntos_objetos_ethernet (pagina_seis_conjunto_objetos_ethernet+)>
+                            <!ELEMENT pagina_seis_conjunto_objetos_ethernet (pagina_seis_objeto_ethernet)>
+                                <!ELEMENT pagina_seis_objeto_ethernet (#PCDATA)>
+                    <!ELEMENT pagina_seis_aclaracion (#PCDATA)>
+            <!-- CUAL ES MI IP -->
+            <!ELEMENT pagina_seis_direccion_ip (pagina_seis_titulo_direccion_ip,pagina_seis_descripcion_direccion_ip
+            ,pagina_seis_resultado_direccion_ip,pagina_seis_recomendaciones_direccion_ip,pagina_seis_diferencias_direccion_ip
+            ,pagina_seis_pregunta_direccion_ip,pagina_seis_observaciones)>
+                <!ELEMENT pagina_seis_titulo_direccion_ip (#PCDATA)>
+                <!ELEMENT pagina_seis_descripcion_direccion_ip (#PCDATA)>
+                <!ELEMENT pagina_seis_resultado_direccion_ip (#PCDATA)>
+                <!ELEMENT pagina_seis_recomendaciones_direccion_ip (#PCDATA)>
+                <!-- DIFERENCIAS DE IP -->
+                <!ELEMENT pagina_seis_diferencias_direccion_ip (pagina_seis_titulo_diferencias_direccion_ip
+                ,pagina_seis_descripcion_diferencias_direccion_ip,pagina_seis_diferencia_direccion_ip)>
+                    <!ELEMENT pagina_seis_titulo_diferencias_direccion_ip (#PCDATA)>
+                    <!ELEMENT pagina_seis_descripcion_diferencias_direccion_ip (#PCDATA)>
+
+                    <!ELEMENT pagina_seis_diferencia_direccion_ip (pagina_seis_diferencia_puntos+)>
+                        <!ELEMENT pagina_seis_diferencia_puntos (pagina_seis_diferencia)>
+                            <!ELEMENT pagina_seis_diferencia (#PCDATA)>
+                <!-- PREGUNTA DE IP -->
+                <!ELEMENT pagina_seis_pregunta_direccion_ip (pagina_seis_titulo_pregunta_direccion_ip
+                ,pagina_seis_descripcion_pregunta_direccion_ip,pagina_seis_explicaciones_pregunta_direccion_ip)>
+                    <!ELEMENT pagina_seis_titulo_pregunta_direccion_ip (#PCDATA)>
+                    <!ELEMENT pagina_seis_descripcion_pregunta_direccion_ip (#PCDATA)>
+
+                    <!ELEMENT pagina_seis_explicaciones_pregunta_direccion_ip (pagina_seis_explicacion_pregunta_direccion_ip+)>
+                        <!ELEMENT pagina_seis_explicacion_pregunta_direccion_ip (pagina_seis_explicacion_pregunta)>
+                            <!ELEMENT pagina_seis_explicacion_pregunta (#PCDATA)>
+                <!-- OBSERVACIONES -->
+                <!ELEMENT pagina_seis_observaciones (pagina_seis_titulo_observaciones,pagina_seis_descripcion_observaciones
+                ,pagina_seis_detalles_observaciones)>
+                    <!ELEMENT pagina_seis_titulo_observaciones (#PCDATA)>
+                    <!ELEMENT pagina_seis_descripcion_observaciones (#PCDATA)>
+
+                    <!ELEMENT pagina_seis_detalles_observaciones (pagina_seis_detalle_observacion+)>
+                        <!ELEMENT pagina_seis_detalle_observacion (pagina_seis_observacion,pagina_seis_adicionales_observacion?)>
+                            <!ELEMENT pagina_seis_observacion (#PCDATA)>
+                            
+                            <!ELEMENT pagina_seis_adicionales_observacion (pagina_seis_adicional_observacion+)>
+                                <!ELEMENT pagina_seis_adicional_observacion (pagina_seis_adicional)>
+                                    <!ELEMENT pagina_seis_adicional (#PCDATA)>
+]>
+
+<pagina_seis>
+    <pagina_seis_tcp_ip>
+        <!-- TCP/IP -->
+        <pagina_seis_titulo_tcpip>Modelo TCP/IP: El Estándar Práctico de Internet</pagina_seis_titulo_tcpip>
+        <pagina_seis_descripcion_tcpip>El modelo TCP/IP es el marco práctico sobre el que funciona Internet y la mayoría de redes modernas. A diferencia del modelo OSI (que es teórico y educativo), TCP/IP se desarrolló para implementación real y agrupa las 7 capas OSI en solo 4 capas funcionales más simples.</pagina_seis_descripcion_tcpip>
+        <pagina_seis_imagen_tcpip>pagina_seis_tcpip.png</pagina_seis_imagen_tcpip>
+        <pagina_seis_representaciones_tcpip>
+
+            <pagina_seis_representacion>
+                <pagina_seis_titulo_representacion>Aplicación</pagina_seis_titulo_representacion>
+                <pagina_seis_descripcion_representacion>Combina las capas de Aplicación, Presentación y Sesión del modelo OSI. Servicios de red que el usuario final ve y utiliza: navegación web (HTTP/HTTPS), correo electrónico (SMTP, IMAP), transferencia de archivos (FTP), DNS.</pagina_seis_descripcion_representacion>
+            </pagina_seis_representacion>
+
+            <pagina_seis_representacion>
+                <pagina_seis_titulo_representacion>Transporte</pagina_seis_titulo_representacion>
+                <pagina_seis_descripcion_representacion>Comunicación host a host, equivalente a la capa 4 de OSI. Gestiona la entrega confiable (TCP) o rápida sin confirmación (UDP) de datos entre aplicaciones. Puertos lógicos identifican servicios específicos (ej: puerto 80 = HTTP, 443 = HTTPS).</pagina_seis_descripcion_representacion>
+            </pagina_seis_representacion>
+
+            <pagina_seis_representacion>
+                <pagina_seis_titulo_representacion>Internet</pagina_seis_titulo_representacion>
+                <pagina_seis_descripcion_representacion>Equivale a la capa de Red OSI. El protocolo IP (Internet Protocol) maneja el direccionamiento lógico y el enrutamiento de paquetes a través de múltiples redes. IPv4 (32 bits) e IPv6 (128 bits) son las versiones actuales.</pagina_seis_descripcion_representacion>
+            </pagina_seis_representacion>
+
+            <pagina_seis_representacion>
+                <pagina_seis_titulo_representacion>Acceso a la Red</pagina_seis_titulo_representacion>
+                <pagina_seis_descripcion_representacion>Fusiona las capas Física y de Enlace de Datos del OSI. Maneja todo lo relacionado con el hardware y el acceso físico al medio: Ethernet, Wi-Fi, cables, direcciones MAC, control de acceso al medio compartido.</pagina_seis_descripcion_representacion>
+            </pagina_seis_representacion>
+            
+        </pagina_seis_representaciones_tcpip>
+        <pagina_seis_importancia>Importancia de estos modelos: Ambos garantizan la interoperabilidad global permitiendo que dispositivos de cualquier fabricante se comuniquen. Dividen problemas complejos en capas manejables, facilitando el diseño, la enseñanza y el desarrollo de nuevas tecnologías sin romper las existentes. OSI es ideal para educación y diagnóstico; TCP/IP es el estándar de facto en implementación real.</pagina_seis_importancia>
+
+        <!-- TABLA TCP/IP -->
+        <pagina_seis_tabla_tcpip>
+            <pagina_seis_titulo_tabla_tcpip>Tabla de Arquitectura de Red: Modelos OSI y TCP/IP</pagina_seis_titulo_tabla_tcpip>
+            <pagina_seis_tabla_descripcion>Esta tabla ayuda a visualizar cómo el modelo TCP/IP (el práctico) agrupa las funciones del modelo OSI (el teórico).</pagina_seis_tabla_descripcion>
+            <pagina_seis_tabla>
+
+                <pagina_seis_cabecera_tabla>
+                    <pagina_seis_titulo_cabecera>Capas Modelo OSI (7 Capas)</pagina_seis_titulo_cabecera>
+                    <pagina_seis_cabecera_funcion>Función Principal</pagina_seis_cabecera_funcion>
+                    <pagina_seis_cabecera_capa>Capas Modelo TCP/IP (4 Capas)</pagina_seis_cabecera_capa>
+                    <pagina_seis_cabecera_protocolo>Protocolos Comunes</pagina_seis_cabecera_protocolo>
+                </pagina_seis_cabecera_tabla>
+
+                <pagina_seis_filas>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>7. Aplicación</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Interfaz con el usuario</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>7. Aplicación</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>HTTP, SMTP, FTP</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>6. Presentación</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Cifrado y formatos (JPG, SSL)</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>(Incluido en Aplicación)</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>SSL/TLS, JPEG, ASCII</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>5. Sesión</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Control de diálogo</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>(Incluido en Aplicación)</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>RPC, NetBIOS</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>4. Transporte</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Fiabilidad y segmentación</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>Transporte</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>TCP, UDP</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>3. Red</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Enrutamiento (La mejor ruta)</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>Internet</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>IP, ICMP, OSPF</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>2. Enlace de Datos</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Acceso al medio y MAC</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>Acceso a la Red</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>Ethernet, Wi-Fi, ARP</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                    <pagina_seis_fila>
+                        <pagina_seis_titulo_fila>1. Física</pagina_seis_titulo_fila>
+                        <pagina_seis_fila_funcion>Cables y señales eléctricas</pagina_seis_fila_funcion>
+                        <pagina_seis_fila_capa>(Incluido en Acceso a la Red)</pagina_seis_fila_capa>
+                        <pagina_seis_fila_protocolo>Cables UTP, Fibra, Hubs</pagina_seis_fila_protocolo>
+                    </pagina_seis_fila>
+
+                </pagina_seis_filas>
+
+            </pagina_seis_tabla>
+        </pagina_seis_tabla_tcpip>
+
+        <!-- PRUEBAS -->
+        <pagina_seis_pruebas>
+            <pagina_seis_titulo_pruebas>Pruebas</pagina_seis_titulo_pruebas>
+            <pagina_seis_explicacion_pruebas>Vamos a sacar nuestra consola powershell, o la consola cmd. y vamos a poner ipconfig</pagina_seis_explicacion_pruebas>
+            <pagina_seis_imagen_prueba_consola>pagina_seis_prueba_adaptador_lan.png</pagina_seis_imagen_prueba_consola>
+        </pagina_seis_pruebas>
+
+        <!-- ADAPTADOR -->
+        <pagina_seis_adaptador>
+            <pagina_seis_titulo_adaptador>1. Adaptador de LAN inalámbrica Wi-Fi</pagina_seis_titulo_adaptador>
+            <pagina_seis_descripcion_adaptador>Esta sección se refiere a tu tarjeta de red Wi-Fi (la antena que conecta tu PC a Internet sin cables).</pagina_seis_descripcion_adaptador>
+
+            <pagina_seis_caracteristicas_adaptador>
+                <pagina_seis_caracteristica_adaptador>
+                    <pagina_seis_titulo_caracteristica>Sufijo DNS específico para la conexión:</pagina_seis_titulo_caracteristica>
+                    <pagina_seis_puntos_caracteristicas>
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>(Está vacío)</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Qué es: A veces, los routers asignan un nombre de dominio a la red (como "micasa.local"). Si está vacío, simplemente significa que tu router no está asignando un nombre específico a esta red. No es un problema.</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+                    </pagina_seis_puntos_caracteristicas>
+                </pagina_seis_caracteristica_adaptador>
+
+                <pagina_seis_caracteristica_adaptador>
+                    <pagina_seis_titulo_caracteristica>Vínculo: dirección IPv6 local:</pagina_seis_titulo_caracteristica>
+                    <pagina_seis_puntos_caracteristicas>
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Tu valor: fe80::5946:6a24:ed21:5c25%12</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Qué es: Es la dirección IP en el formato moderno (IPv6). El término "Local" significa que esta dirección solo sirve para comunicarse con otros dispositivos dentro de tu misma red local, no para salir a Internet globalmente.</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+                    </pagina_seis_puntos_caracteristicas>
+                </pagina_seis_caracteristica_adaptador>
+
+                <pagina_seis_caracteristica_adaptador>
+                    <pagina_seis_titulo_caracteristica>Dirección IPv4:</pagina_seis_titulo_caracteristica>
+                    <pagina_seis_puntos_caracteristicas>
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Tu valor: 10.50.0.30</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Qué es: Este es el dato más importante. Es la "matrícula" o identificación de tu ordenador dentro de la red de tu casa u oficina.</pagina_seis_caracteristica>
+
+                                <pagina_seis_detalles_caracteristicas>
+                                    <pagina_seis_detalle_caracteristica>
+                                        <pagina_seis_detalle>10.50.0 indica la red a la que perteneces.</pagina_seis_detalle>
+                                    </pagina_seis_detalle_caracteristica>
+
+                                    <pagina_seis_detalle_caracteristica>
+                                        <pagina_seis_detalle>.30 es el número específico de tu ordenador.</pagina_seis_detalle>
+                                    </pagina_seis_detalle_caracteristica>
+                                </pagina_seis_detalles_caracteristicas>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Nota: Las direcciones que empiezan por 10.x.x.x son redes privadas, muy comunes en oficinas o configuraciones específicas (a diferencia de las típicas 192.168.1.x de casa).</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+                    </pagina_seis_puntos_caracteristicas>
+                </pagina_seis_caracteristica_adaptador>
+
+                <pagina_seis_caracteristica_adaptador>
+                    <pagina_seis_titulo_caracteristica>Máscara de subred:</pagina_seis_titulo_caracteristica>
+                    <pagina_seis_puntos_caracteristicas>
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Tu valor: 255.255.255.0</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Qué es: Define el tamaño de la red.</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>El 255.255.255 le dice al ordenador que la parte fija de la red es 10.50.0.</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>El .0 final indica que los dispositivos pueden cambiar solo el último número (del 1 al 254).</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+                    </pagina_seis_puntos_caracteristicas>
+                </pagina_seis_caracteristica_adaptador>
+
+                <pagina_seis_caracteristica_adaptador>
+                    <pagina_seis_titulo_caracteristica>Puerta de enlace predeterminada:</pagina_seis_titulo_caracteristica>
+                    <pagina_seis_puntos_caracteristicas>
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Tu valor: 10.50.0.1</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Qué es: Esta es la dirección IP de tu Router.</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+
+                        <pagina_seis_punto_caracteristica>
+                            <pagina_seis_caracteristica>Se llama "puerta de enlace" (Gateway) porque es la puerta por la que salen tus datos cuando quieres ir a Internet (Google, YouTube, etc.). Si tu ordenador quiere "salir" de casa, envía la información al 10.50.0.1.</pagina_seis_caracteristica>
+                        </pagina_seis_punto_caracteristica>
+                    </pagina_seis_puntos_caracteristicas>
+                </pagina_seis_caracteristica_adaptador>
+
+            </pagina_seis_caracteristicas_adaptador>
+        </pagina_seis_adaptador>
+
+        <!-- COMO CONFIGURAR LA RED ("El cuadro de Propiedades") -->
+        <pagina_seis_configuracion_red>
+            <pagina_seis_titulo_configuracion_red>Para CONFIGURAR la red (El "Cuadro de Propiedades")</pagina_seis_titulo_configuracion_red>
+            <pagina_seis_descripcion_configuracion_red>Si lo que necesitas es abrir la ventana donde se cambian manualmente las IPs o las DNS, el método más rápido en cualquier versión de Windows (10 u 11) es usar un atajo:</pagina_seis_descripcion_configuracion_red>
+
+            <pagina_seis_atajos_configuracion_red>
+                <pagina_seis_atajo_configuracion_red>
+                    <pagina_seis_atajo>En tu teclado, mantén pulsada la tecla Windows y pulsa la tecla R (Windows + R). Se abrirá una ventanita pequeña llamada "Ejecutar".</pagina_seis_atajo>
+                </pagina_seis_atajo_configuracion_red>
+
+                <pagina_seis_atajo_configuracion_red>
+                    <pagina_seis_atajo>Escribe el siguiente comando tal cual y pulsa Aceptar: ncpa.cpl</pagina_seis_atajo>
+                </pagina_seis_atajo_configuracion_red>
+
+                <pagina_seis_atajo_configuracion_red>
+                    <pagina_seis_atajo>Se abrirá una ventana con tus iconos de red (Wi-Fi, Ethernet, Bluetooth).</pagina_seis_atajo>
+                </pagina_seis_atajo_configuracion_red>
+
+                <pagina_seis_atajo_configuracion_red>
+                    <pagina_seis_atajo>Haz clic derecho sobre tu adaptador (en tu caso, el que dice "Wi-Fi") y selecciona Propiedades.</pagina_seis_atajo>
+                </pagina_seis_atajo_configuracion_red>
+
+                <pagina_seis_atajo_configuracion_red>
+                    <pagina_seis_atajo>En la lista, busca Protocolo de Internet versión 4 (TCP/IPv4) y haz doble clic sobre él.</pagina_seis_atajo>
+                </pagina_seis_atajo_configuracion_red>
+            </pagina_seis_atajos_configuracion_red>
+
+            <pagina_seis_pasos_configuraciones_red>
+                <pagina_seis_pasos_configuracion_red>
+                    <pagina_seis_paso_descripcion>¿Qué puedes hacer aquí? En esa ventana verás que probablemente está marcado "Obtener una dirección IP automáticamente". Si necesitas configurar una red de área local fija, ahí es donde seleccionarías "Usar la siguiente dirección IP" para copiar los datos que viste antes (Dirección IP, Máscara, Puerta de enlace)</pagina_seis_paso_descripcion>
+                    <pagina_seis_imagenes_paso>
+                        <pagina_seis_imagen_paso>pagina_seis_conexiones_red.png</pagina_seis_imagen_paso>
+                    </pagina_seis_imagenes_paso>
+                </pagina_seis_pasos_configuracion_red>
+
+                <pagina_seis_pasos_configuracion_red>
+                    <pagina_seis_paso_descripcion>Botón derecho en la red wifi, y botón derecho en TCP IPv4</pagina_seis_paso_descripcion>
+                    <pagina_seis_imagenes_paso>
+                        <pagina_seis_imagen_paso>pagina_seis_propiedades_wifi.png</pagina_seis_imagen_paso>
+                    </pagina_seis_imagenes_paso>
+                    <pagina_seis_imagenes_paso>
+                        <pagina_seis_imagen_paso>pagina_seis_propiedades_ipv4.png</pagina_seis_imagen_paso>
+                    </pagina_seis_imagenes_paso>
+                </pagina_seis_pasos_configuracion_red>
+
+                <pagina_seis_pasos_configuracion_red>
+                    <pagina_seis_paso_descripcion>Opciones avanzadas</pagina_seis_paso_descripcion>
+                    <pagina_seis_imagenes_paso>
+                        <pagina_seis_imagen_paso>pagina_seis_opciones_avanzadas.png</pagina_seis_imagen_paso>
+                    </pagina_seis_imagenes_paso>
+                </pagina_seis_pasos_configuracion_red>
+
+                <pagina_seis_pasos_configuracion_red>
+                    <pagina_seis_paso_descripcion>Opción IPv6.</pagina_seis_paso_descripcion>
+                    <pagina_seis_imagenes_paso>
+                        <pagina_seis_imagen_paso>pagina_seis_propiedades_ipv6.png</pagina_seis_imagen_paso>
+                    </pagina_seis_imagenes_paso>
+                </pagina_seis_pasos_configuracion_red>
+            </pagina_seis_pasos_configuraciones_red>
+
+            <pagina_seis_pasos_conexiones_red>
+                <pagina_seis_titulo_pasos_conexiones_red>Conexiones de red:</pagina_seis_titulo_pasos_conexiones_red>
+                
+                <pagina_seis_bloque_pasos_conexiones_red>
+                    <pagina_seis_descripcion_paso_conexiones_red>Dale a boton derecho en el simbolo de windows y ve a conexiones de red.</pagina_seis_descripcion_paso_conexiones_red>
+                    <pagina_seis_conjuntos_objetos_conexiones_red>
+                        <pagina_seis_conjunto_objetos_conexiones_red>
+                            <pagina_seis_objeto_conexiones_red>pagina_seis_barra_conexiones_red.png</pagina_seis_objeto_conexiones_red>
+                        </pagina_seis_conjunto_objetos_conexiones_red>
+
+                        <pagina_seis_conjunto_objetos_conexiones_red>
+                            <pagina_seis_objeto_conexiones_red>pagina_seis_red_internet.png</pagina_seis_objeto_conexiones_red>
+                        </pagina_seis_conjunto_objetos_conexiones_red>
+                    </pagina_seis_conjuntos_objetos_conexiones_red>
+                </pagina_seis_bloque_pasos_conexiones_red>
+
+                <pagina_seis_bloque_pasos_ethernet>
+                    <pagina_seis_descripcion_paso_ethernet>Luego le daremos a ethernet para ver los datos de la configuración que tenemos.</pagina_seis_descripcion_paso_ethernet>
+                    <pagina_seis_resultado_paso_ethernet>Nos aparecera un curado muy valioso donde nos dice los datos que hemos podido coprobar antes desde powerShell, con el comando ipconfig</pagina_seis_resultado_paso_ethernet>
+                    <pagina_seis_conjuntos_objetos_ethernet>
+                        <pagina_seis_conjunto_objetos_ethernet>
+                            <pagina_seis_objeto_ethernet>pagina_seis_ethernet.png</pagina_seis_objeto_ethernet>
+                        </pagina_seis_conjunto_objetos_ethernet>
+
+                        <pagina_seis_conjunto_objetos_ethernet>
+                            <pagina_seis_objeto_ethernet>Aqui podemos configurar y editar algunas cosas como la direccion ip y el servidor DNS</pagina_seis_objeto_ethernet>
+                        </pagina_seis_conjunto_objetos_ethernet>
+                    </pagina_seis_conjuntos_objetos_ethernet>
+                </pagina_seis_bloque_pasos_ethernet>
+
+                <pagina_seis_aclaracion>Pero esta no es nuestra direccion ip real exterior.. eso porque es</pagina_seis_aclaracion>
+            </pagina_seis_pasos_conexiones_red>
+
+        </pagina_seis_configuracion_red>
+
+        <!-- CUAL ES MI IP -->
+        <pagina_seis_direccion_ip>
+            <pagina_seis_titulo_direccion_ip>¿Cuál es mi IP?</pagina_seis_titulo_direccion_ip>
+
+            <pagina_seis_descripcion_direccion_ip>
+                <![CDATA[ 
+                    <p>Vamos hacer unas pequeñas pruebas: <a href="#">https://www.arsys.es/herramientas/cual-es-mi-ip</a></p>
+                ]]>
+            </pagina_seis_descripcion_direccion_ip>
+
+            <pagina_seis_resultado_direccion_ip>Esto nos dará el resultado de nuestra IP externa</pagina_seis_resultado_direccion_ip>
+            <pagina_seis_recomendaciones_direccion_ip>Descarga opera y utiliza una VPN como bearVPN y ahora comprueba la ip</pagina_seis_recomendaciones_direccion_ip>
+            
+            <!-- DIFERENCIAS DE IP -->
+            <pagina_seis_diferencias_direccion_ip>
+                <pagina_seis_titulo_diferencias_direccion_ip>La diferencia: IP Privada (Local) vs. IP Pública (Externa)</pagina_seis_titulo_diferencias_direccion_ip>
+                <pagina_seis_descripcion_diferencias_direccion_ip>Imagina que tu conexión a Internet es como un gran edificio de oficinas:</pagina_seis_descripcion_diferencias_direccion_ip>
+
+                <pagina_seis_diferencia_direccion_ip>
+                    <pagina_seis_diferencia_puntos>
+                        <pagina_seis_diferencia>Tu IP Pública (La que ves en la web): Es la dirección postal del edificio (ej: Calle Gran Vía, 50). Esta dirección es única en todo el mundo y es la que ven las páginas web cuando entras. Esta IP la tiene tu Router, no tu ordenador.</pagina_seis_diferencia>
+                    </pagina_seis_diferencia_puntos>
+
+                    <pagina_seis_diferencia_puntos>
+                        <pagina_seis_diferencia>Tu IP Privada (La que muestra Windows): Es el número de tu despacho dentro del edificio (ej: Despacho 30). Solo sirve para que el conserje (el Router) sepa a qué habitación llevar los paquetes. Esta es la que muestra tu configuración de Windows.</pagina_seis_diferencia>
+                    </pagina_seis_diferencia_puntos>
+                </pagina_seis_diferencia_direccion_ip>
+
+            </pagina_seis_diferencias_direccion_ip>
+
+            <!-- PREGUNTA DE IP -->
+            <pagina_seis_pregunta_direccion_ip>
+                <pagina_seis_titulo_pregunta_direccion_ip>¿Por qué Windows no sabe tu IP externa?</pagina_seis_titulo_pregunta_direccion_ip>
+                <pagina_seis_descripcion_pregunta_direccion_ip>Tu ordenador, en realidad, no tiene conexión directa con "el mundo exterior". Tu ordenador solo se conecta al Router</pagina_seis_descripcion_pregunta_direccion_ip>
+                
+                <pagina_seis_explicaciones_pregunta_direccion_ip>
+                    <pagina_seis_explicacion_pregunta_direccion_ip>
+                        <pagina_seis_explicacion_pregunta>Tu PC le dice al Router: "Quiero ver Google"</pagina_seis_explicacion_pregunta>
+                    </pagina_seis_explicacion_pregunta_direccion_ip>
+
+                    <pagina_seis_explicacion_pregunta_direccion_ip>
+                        <pagina_seis_explicacion_pregunta>El Router anota quién lo pidió (tu IP local 10.50.0.30), sale a Internet con su IP Pública, recoge la información y te la devuelve.</pagina_seis_explicacion_pregunta>
+                    </pagina_seis_explicacion_pregunta_direccion_ip>
+
+                    <pagina_seis_explicacion_pregunta_direccion_ip>
+                        <pagina_seis_explicacion_pregunta>Windows solo se preocupa de su conexión con el Router, por eso nunca verás la IP pública en este menú de configuración.</pagina_seis_explicacion_pregunta>
+                    </pagina_seis_explicacion_pregunta_direccion_ip>
+                </pagina_seis_explicaciones_pregunta_direccion_ip>
+
+            </pagina_seis_pregunta_direccion_ip>
+
+            <!-- OBSERVACIONES -->
+            <pagina_seis_observaciones>
+                <pagina_seis_titulo_observaciones>Observaciones</pagina_seis_titulo_observaciones>
+                <pagina_seis_descripcion_observaciones>Hay dos detalles importantes</pagina_seis_descripcion_observaciones>
+
+                <pagina_seis_detalles_observaciones>
+                    <pagina_seis_detalle_observacion>
+                        <pagina_seis_observacion>"No está conectado": Fíjate que arriba dice "Ethernet: No está conectado". Esto significa que ahora mismo ese cable no funciona o no está puesto, por lo que Windows no tiene ninguna dirección IP asignada en esa tarjeta específica (aunque sí tengas internet por Wi-Fi como vimos en la imagen anterior)</pagina_seis_observacion>
+                    </pagina_seis_detalle_observacion>
+
+                    <pagina_seis_detalle_observacion>
+                        <pagina_seis_observacion>DNS Manuales: Tienes configurados los DNS de forma manual.</pagina_seis_observacion>
+                        <pagina_seis_adicionales_observacion>
+                            <pagina_seis_adicional_observacion>
+                                <pagina_seis_adicional>192.168.1.101: Esto parece ser una dirección local (quizás un servidor en la oficina o un bloqueador de anuncios tipo Pi-Hole)</pagina_seis_adicional>
+                            </pagina_seis_adicional_observacion>
+
+                            <pagina_seis_adicional_observacion>
+                                <pagina_seis_adicional>8.8.8.8: Este es el DNS de Google (usado como respaldo).</pagina_seis_adicional>
+                            </pagina_seis_adicional_observacion>
+                        </pagina_seis_adicionales_observacion>
+                    </pagina_seis_detalle_observacion>
+
+                </pagina_seis_detalles_observaciones>
+            </pagina_seis_observaciones>
+        </pagina_seis_direccion_ip>
+
+    </pagina_seis_tcp_ip>
+</pagina_seis>

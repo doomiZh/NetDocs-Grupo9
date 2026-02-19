@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE pagina_dos [
+    <!ELEMENT pagina_dos (pagina_dos_titulos_fundamentos,pagina_dos_descripcion_fundamentos,pagina_dos_propiedades
+    ,descripcion_final_pagina_dos)>
+        <!ELEMENT pagina_dos_titulos_fundamentos (#PCDATA)>
+        <!ELEMENT pagina_dos_descripcion_fundamentos (#PCDATA)>
+
+        <!ELEMENT pagina_dos_propiedades (pagina_dos_propiedad_por_bloque+)>
+            <!ELEMENT pagina_dos_propiedad_por_bloque (pagina_dos_subtitulo_fundamentos,pagina_dos_descripcion)>
+                <!ELEMENT pagina_dos_subtitulo_fundamentos (#PCDATA)>
+                <!ELEMENT pagina_dos_descripcion (#PCDATA)>
+                <!ELEMENT descripcion_final_pagina_dos (#PCDATA)>
+]>
+
+
+<pagina_dos>
+    <pagina_dos_titulos_fundamentos>
+        Definición y Propiedades Clave de las Redes
+    </pagina_dos_titulos_fundamentos>
+    <pagina_dos_descripcion_fundamentos>
+        Una red de computadoras es un conjunto de dispositivos interconectados que comparten
+        recursos (impresoras, servidores, almacenamiento) e
+        información de manera eficiente.
+        Esta infraestructura digital es el pilar fundamental que permite la comunicación global
+        instantánea y el intercambio de datos en tiempo real.
+    </pagina_dos_descripcion_fundamentos>
+
+    <!-- PROPIEDADES -->
+    <pagina_dos_propiedades>
+        <pagina_dos_propiedad_por_bloque>
+            <pagina_dos_subtitulo_fundamentos>
+                Interoperabilidad
+            </pagina_dos_subtitulo_fundamentos>
+            <pagina_dos_descripcion>
+                Capacidad crucial de conectar equipos de
+                distintos fabricantes y sistemas operativos
+                sin incompatibilidades.
+                Por ejemplo, un ordenador Windows puede
+                colaborar perfectamente con un Mac, un
+                servidor Linux y dispositivos Android en la
+                misma red gracias a protocolos estándar y
+                arquitecturas abiertas.
+            </pagina_dos_descripcion>
+        </pagina_dos_propiedad_por_bloque>
+
+        <pagina_dos_propiedad_por_bloque>
+            <pagina_dos_subtitulo_fundamentos>
+                Escalabilidad
+            </pagina_dos_subtitulo_fundamentos>
+            <pagina_dos_descripcion>
+                La red debe poder crecer y adaptarse a las
+                necesidades cambiantes de la organización.
+                Esto significa añadir nuevos usuarios,
+                dispositivos o servicios sin degradar el
+                rendimiento existente. Una red escalable se
+                diseña pensando en el futuro, con margen
+                de crecimiento en ancho de banda y
+                capacidad de procesamiento.
+            </pagina_dos_descripcion>
+        </pagina_dos_propiedad_por_bloque>
+
+        <pagina_dos_propiedad_por_bloque>
+            <pagina_dos_subtitulo_fundamentos>
+                Seguridad
+            </pagina_dos_subtitulo_fundamentos>
+            <pagina_dos_descripcion>
+                Protección integral contra amenazas
+                digitales (malware, phishing, ataques DDoS,
+                ransomware) mediante múltiples capas de
+                defensa:
+            Firewalls que filtran tráfico no autorizado,
+            cifrado de datos en tránsito, VPNs para
+            conexiones remotas seguras, y sistemas de
+            detección de intrusiones.
+        </pagina_dos_descripcion>
+        </pagina_dos_propiedad_por_bloque>
+    </pagina_dos_propiedades>
+
+    <descripcion_final_pagina_dos>
+        La importancia de las redes en la actualidad es indiscutible: son vitales para el
+        teletrabajo mediante VPNs corporativas seguras, fundamentales para la
+        educación a distancia con plataformas de videoconferencia, y esenciales para el Internet
+        de las Cosas (IoT) que conecta miles de millones de
+        dispositivos inteligentes en hogares, ciudades y fábricas.
+    </descripcion_final_pagina_dos>
+</pagina_dos>
