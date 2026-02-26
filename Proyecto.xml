@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- PRUEBA DEVELOP GITHUB -->
- <!-- MARCO REVUELTO prueba features-->
-
+<!-- PRUEBA DEL ERROR QUITANDO LA
+     ETIQUETA DE CIERRE DE PROYECTO-->
 
 <!DOCTYPE proyecto [
     <!ENTITY pag_uno SYSTEM "pagina_uno.xml">
